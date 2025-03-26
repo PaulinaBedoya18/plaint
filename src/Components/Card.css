@@ -1,0 +1,21 @@
+/* Tarjetas */
+.card {
+    border: 2px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: white;
+  }
+  .card-image {
+    width: 100%;
+    height: auto;
+  }
+  .card-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  .card-description {
+    font-size: 1em;
+    color: #555;
+  }
+  

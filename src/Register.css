@@ -1,0 +1,46 @@
+/* Contenedor del registro */
+.register-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Título */
+  .register-container h2 {
+    font-size: 24px;
+    color: #004080;
+    margin-bottom: 20px;
+  }
+  
+  /* Campos de entrada */
+  .register-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #004080;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Botón de registro */
+  .register-container button {
+    width: 100%;
+    background: #0073e6;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .register-container button:hover {
+    background: #005bb5;
+  }
+  
