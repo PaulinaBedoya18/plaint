@@ -4,8 +4,9 @@
     max-width: 400px;
     margin: 80px auto;
     padding: 20px;
-    background: #ffffff;
+    background-color: rgba(233, 236, 238, 0.8); /* Fondo blanco opaco */
     border-radius: 10px;
+    border: 2px solid #070707;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
@@ -13,16 +14,16 @@
   /* Título */
   .login-container h2 {
     font-size: 24px;
-    color: #004080;
+    color: #060c11;
     margin-bottom: 20px;
   }
   
   /* Campos de entrada */
   .input-field {
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 2px solid #004080;
+    border: 2px solid #070707;
     border-radius: 5px;
     font-size: 16px;
   }

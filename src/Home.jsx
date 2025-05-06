@@ -29,22 +29,22 @@ const Home = () => {
         </form>
       </header>
       <section className="recommended">
-        <h2>Destinos Recomendados</h2>
+        <h2 className="titulo">Destinos Recomendados</h2>
         <div className="card-container">
           <Card
             title="París, Francia"
             description="La ciudad del amor y la luz, con su icónica Torre Eiffel."
-            image="/images/paris.jpg"
+            image="/paris_francia.jpg"
           />
           <Card
             title="Tokio, Japón"
             description="Una mezcla perfecta de tradición y tecnología."
-            image="/images/tokio.jpg"
+            image="/tokio_japon.jpg"
           />
           <Card
             title="Cusco, Perú"
             description="La puerta de entrada a Machu Picchu y la cultura Inca."
-            image="/images/cusco.jpg"
+            image="/cusco_peru.jpg"
           />
         </div>
       </section>

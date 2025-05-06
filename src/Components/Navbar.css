@@ -1,25 +1,43 @@
 /* Navbar */
 .navbar {
-    background-color: #236ab1;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between; /* Alinea los elementos a los extremos */
-    align-items: center;
-  }
-  
-  .nav-links {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 20px; /* Espaciado entre los enlaces */
-  }
-  
-  .nav-links li {
-    display: inline;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-  }
-  
+  background-color: rgba(101, 157, 212, 0.8); /* Fondo azul opaco */
+  padding: 10px 50px; /* Padding para un buen espacio en los lados */
+  display: flex;
+  justify-content: space-between; /* Distribuir los elementos a lo largo del navbar */
+  align-items: center;
+  border-radius: 20px solid black; /* Reborde negro */
+  position: relative;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 30px; /* Espaciado entre los botones */
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links h3 {
+  padding: 10px 50px;
+  background-color: transparent; /* Fondo transparente */
+  border: 2px solid black; /* Borde negro */
+  border-radius: 10px; /* Bordes redondeados */
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Animación suave en hover */
+}
+
+.nav-links h3:hover {
+  background-color: black;
+  color: #659dd4; /* Color azul en el texto cuando se pasa el mouse */
+}
+
+/* Estilo para el logo */
+.logo {
+  width: auto; /* Ajustar el tamaño del logo */
+  height: auto;
+  border-radius: 10px solid black; /* Reborde negro */
+}

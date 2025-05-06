@@ -22,13 +22,34 @@ const Register = () => {
     <div className="register-container">
       <h2>Registro</h2>
       <form onSubmit={handleRegister}>
+       <input
+          type="nombre"
+          placeholder="Nombres"
+          value={String}
+          onChange={(e) => setNombre(e.target.value)}
+          required
+        />
+        <input
+          type="apellido"
+          placeholder="Apellidos"
+          value={String}
+          onChange={(e) => setApellido(e.target.value)}
+          required
+        />
         <input
           type="email"
           placeholder="Correo electrónico"
-          value={email}
+          value={String}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
+        <input
+        type="fecha de nacimiento"
+        placeholder="Fecha de nacimiento"
+        value={Date}
+        onChange={(e) => setFechadenacimiento(e.target.value)}
+        required
+      />
         <input
           type="password"
           placeholder="Contraseña"

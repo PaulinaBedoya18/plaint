@@ -3,7 +3,7 @@
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background: #ffffff;
+    background-color: rgba(233, 236, 238, 0.8); /* Fondo blanco opaco */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;

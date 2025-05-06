@@ -51,4 +51,19 @@
     font-size: 14px;
     color: #555;
   }
+
+  .historial-container h2 {
+    padding: 10px 50px;
+    background-color: rgba(101, 157, 212, 0.8);
+    border: 1px solid black; /* Borde negro */
+    border-radius: 10px; /* Bordes redondeados */
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Animación suave en hover */
+  }
   
+  .historial-container h2:hover {
+    background-color: black;
+    color: #659dd4; /* Color azul en el texto cuando se pasa el mouse */
+  }
+    
