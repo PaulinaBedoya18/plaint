@@ -13,10 +13,8 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-links">
         <h3 onClick={() => handleNavigation("/")}>Home</h3>
-        <h3 onClick={() => handleNavigation("/historial")}>Historial</h3>
+        <h3 onClick={() => handleNavigation("/vision-mision")}>Sobre Nosotros</h3>
         <h3 onClick={() => handleNavigation("/login")}>Login</h3>
-        <h3 onClick={() => handleNavigation("/register")}>Registro</h3>
-        <h3 onClick={() => handleNavigation("/vision-mision")}>Visión y Misión</h3>
       </div>
       <img src={logo} alt="PlanIT Logo" className="logo" />
     </nav>

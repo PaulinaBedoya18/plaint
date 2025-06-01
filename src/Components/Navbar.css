@@ -37,7 +37,7 @@
 
 /* Estilo para el logo */
 .logo {
-  width: auto; /* Ajustar el tamaño del logo */
+  width: 200px!important; /* Ajustar el tamaño del logo */
   height: auto;
   border-radius: 10px solid black; /* Reborde negro */
 }

@@ -1,0 +1,93 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Maria Lopera",
+      "correo": "maria@example.com",
+      "contrasena": "123456"
+    },
+    {
+      "id": 2,
+      "nombre": "Juan Pérez",
+      "correo": "juan@example.com",
+      "contrasena": "abcdef"
+    },
+    {
+      "id": "d617",
+      "nombre": "Paulina",
+      "apellido": "Lopera",
+      "email": "pau_18lb@hotmail.com",
+      "fechaNacimiento": "2001-01-18",
+      "password": "1192767507"
+    }
+  ],
+  "destinos": [
+    {
+      "id": 1,
+      "pais": "Francia",
+      "ciudad": "París",
+      "restaurantes": [
+        "Le Jules Verne",
+        "Chez Janou"
+      ],
+      "transporte_publico_usd": 2.5,
+      "tiquete_avion_usd": 850,
+      "comidas_tipicas": [
+        "Croissant",
+        "Coq au vin"
+      ],
+      "sitios_turisticos": [
+        "Torre Eiffel",
+        "Museo del Louvre"
+      ],
+      "playas_famosas": [],
+      "costo_promedio_hotel_usd": 120
+    },
+    {
+      "id": 2,
+      "pais": "Japón",
+      "ciudad": "Tokio",
+      "restaurantes": [
+        "Sukiyabashi Jiro",
+        "Ichiran Ramen"
+      ],
+      "transporte_publico_usd": 1.8,
+      "tiquete_avion_usd": 1200,
+      "comidas_tipicas": [
+        "Sushi",
+        "Ramen"
+      ],
+      "sitios_turisticos": [
+        "Templo Senso-ji",
+        "Shibuya Crossing"
+      ],
+      "playas_famosas": [
+        "Playa de Zushi"
+      ],
+      "costo_promedio_hotel_usd": 100
+    }
+  ],
+  "busquedas": [
+    {
+      "id": 1,
+      "pais": "Francia",
+      "ciudad": "París",
+      "restaurantes": [
+        "Le Jules Verne",
+        "Chez Janou"
+      ],
+      "transporte_publico_usd": 2.5,
+      "tiquete_avion_usd": 850,
+      "comidas_tipicas": [
+        "Croissant",
+        "Coq au vin"
+      ],
+      "sitios_turisticos": [
+        "Torre Eiffel",
+        "Museo del Louvre"
+      ],
+      "playas_famosas": [],
+      "costo_promedio_hotel_usd": 120
+    }
+  ]
+}

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 import Input from "./Components/Input";
 import Button from "./Components/Button";
 import Card from "./Components/Card";
@@ -6,10 +8,20 @@ import "./Home.css";
 
 const Home = () => {
   const [search, setSearch] = useState("");
+  const navigate = useNavigate();
 
   const handleSearch = (e) => {
     e.preventDefault();
-    console.log("Buscando:", search);
+    Swal.fire({
+      title: "Inicia sesión",
+      text: "Debes iniciar sesión para realizar una búsqueda",
+      icon: "info",
+      confirmButtonText: "Ir a iniciar sesión"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        navigate("/login");
+      }
+    });
   };
 
   return (

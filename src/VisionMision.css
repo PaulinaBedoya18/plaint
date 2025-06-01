@@ -1,31 +1,58 @@
 /* Contenedor general */
 .content {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: rgba(233, 236, 238, 0.8); /* Fondo blanco opaco */
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  /* Secciones de visión y misión */
-  .vision, .mision {
-    margin-bottom: 30px;
-    padding: 20px;
-    border-left: 5px solid #0073e6;
-    background: #f0f8ff;
-    border-radius: 5px;
-  }
-  
-  .vision h2, .mision h2 {
-    font-size: 24px;
-    color: #004080;
-  }
-  
-  .vision p, .mision p {
-    font-size: 18px;
-    color: #333;
-    line-height: 1.5;
-  }
-  
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(233, 236, 238, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Sección sobre nosotros */
+.sobre-nosotros {
+  margin-bottom: 40px;
+}
+
+.sobre-nosotros h1 {
+  font-size: 28px;
+  color: #003366;
+}
+
+.sobre-nosotros p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Contenedor de las cards en horizontal */
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* Para adaptarse a pantallas pequeñas */
+}
+
+/* Tarjetas de visión y misión */
+.card-horizontal {
+  flex: 1;
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-left: 5px solid #0073e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-horizontal h2 {
+  font-size: 24px;
+  color: #004080;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-horizontal p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+}
