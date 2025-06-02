@@ -1,18 +1,6 @@
 {
   "usuarios": [
     {
-      "id": 1,
-      "nombre": "Maria Lopera",
-      "correo": "maria@example.com",
-      "contrasena": "123456"
-    },
-    {
-      "id": 2,
-      "nombre": "Juan Pérez",
-      "correo": "juan@example.com",
-      "contrasena": "abcdef"
-    },
-    {
       "id": "d617",
       "nombre": "Paulina",
       "apellido": "Lopera",
@@ -26,68 +14,2433 @@
       "id": 1,
       "pais": "Francia",
       "ciudad": "París",
-      "restaurantes": [
-        "Le Jules Verne",
-        "Chez Janou"
+      "descripcion": "París, conocida como la Ciudad de la Luz, es famosa por su rica historia, arquitectura icónica y gastronomía de clase mundial.",
+      "comida": [
+        "Le George - Four Seasons Hôtel George V ",
+        "Le Tire-Bouchon Rodier ",
+        "The Blossom Arms ",
+        "Café de l'Homme ",
+        "Pain Vin Fromages "
       ],
-      "transporte_publico_usd": 2.5,
-      "tiquete_avion_usd": 850,
-      "comidas_tipicas": [
-        "Croissant",
-        "Coq au vin"
+      "playas": [
+        "No tiene playas naturales; sin embargo, durante el verano se instala 'Paris Plages' a lo largo del río Sena, ofreciendo arena y tumbonas para los locales y turistas."
       ],
-      "sitios_turisticos": [
-        "Torre Eiffel",
-        "Museo del Louvre"
+      "hoteles": [
+        {
+          "nombre": "Four Seasons Hotel George V",
+          "precio_noche_usd": 1000
+        },
+        {
+          "nombre": "Hôtel de Crillon",
+          "precio_noche_usd": 800
+        },
+        {
+          "nombre": "Ibis Paris Montmartre",
+          "precio_noche_usd": 120
+        }
       ],
-      "playas_famosas": [],
-      "costo_promedio_hotel_usd": 120
+      "transporte": 2.5,
+      "clima": [
+        "Primavera: 15-25°C, agradable.",
+        "Verano: 25-35°C, caluroso.",
+        "Otoño: 10-20°C, fresco.",
+        "Invierno: 0-10°C, frío."
+      ],
+      "sitios": [
+        {
+          "nombre": "Torre Eiffel",
+          "horarios": "9:30 AM - 11:45 PM"
+        },
+        {
+          "nombre": "Museo del Louvre",
+          "horarios": "9:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Catedral de Notre-Dame",
+          "horarios": "7:45 AM - 6:45 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (abril a junio): Mejor clima y precios moderados.",
+        "Otoño (septiembre a noviembre): Menos turistas y buen clima.",
+        "Verano (julio a agosto): Alta temporada, más caro, más turistas."
+      ]
     },
     {
       "id": 2,
+      "pais": "España",
+      "ciudad": "Madrid",
+      "descripcion": "Capital de España, conocida por su vida nocturna y arte. Madrid es famosa por su rica historia y sus museos emblemáticos.",
+      "comida": [
+        "Casa Lucio",
+        "Sobrino de Botín",
+        "El Club Allard",
+        "Bar Tomate",
+        "Los Galayos"
+      ],
+      "playas": [
+        "No tiene"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Hotel Ritz Madrid",
+          "precio_noche_usd": 450
+        },
+        {
+          "nombre": "Hotel Emperador",
+          "precio_noche_usd": 150
+        },
+        {
+          "nombre": "Ibis Madrid Centro",
+          "precio_noche_usd": 100
+        }
+      ],
+      "transporte": 1.8,
+      "clima": [
+        "Primavera: Agradable, 15-25°C",
+        "Verano: Calor, 25-35°C",
+        "Otoño: Fresco, 10-20°C",
+        "Invierno: Frío, 0-10°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Museo del Prado",
+          "horarios": "10:00 AM - 8:00 PM"
+        },
+        {
+          "nombre": "Palacio Real",
+          "horarios": "10:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Parque del Retiro",
+          "horarios": "6:00 AM - 10:00 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (abril a junio): Clima ideal, turistas moderados.",
+        "Verano (julio a agosto): Alta temporada, calor extremo.",
+        "Otoño (septiembre a noviembre): Buen clima y menos turistas."
+      ]
+    },
+    {
+      "id": 3,
+      "pais": "Italia",
+      "ciudad": "Roma",
+      "descripcion": "Roma, la capital de Italia, es famosa por sus monumentos históricos, la Ciudad del Vaticano y su cocina tradicional.",
+      "comida": [
+        "La Pergola",
+        "Trattoria Monti",
+        "Ristorante Aroma",
+        "Da Enzo al 29",
+        "Pizzarium"
+      ],
+      "playas": [
+        "Ostia",
+        "Anzio"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Hotel de Russie",
+          "precio_noche_usd": 550
+        },
+        {
+          "nombre": "Hotel Artemide",
+          "precio_noche_usd": 200
+        },
+        {
+          "nombre": "Ibis Roma Centro",
+          "precio_noche_usd": 90
+        }
+      ],
+      "transporte": 2.2,
+      "clima": [
+        "Primavera: 15-25°C",
+        "Verano: 20-35°C",
+        "Otoño: 10-20°C",
+        "Invierno: 0-10°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Coliseo Romano",
+          "horarios": "8:30 AM - 7:00 PM"
+        },
+        {
+          "nombre": "Museos Vaticanos",
+          "horarios": "9:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Fontana di Trevi",
+          "horarios": "24 horas"
+        }
+      ],
+      "fechas": [
+        "Primavera (abril a junio): Mejor clima y precios moderados.",
+        "Otoño (septiembre a noviembre): Menos turistas, buen clima.",
+        "Verano (julio a agosto): Alta temporada, caro."
+      ]
+    },
+    {
+      "id": 4,
+      "pais": "México",
+      "ciudad": "Ciudad de México",
+      "descripcion": "La Ciudad de México es la capital del país y un centro cultural y económico en América Latina, famosa por su historia y arquitectura.",
+      "comida": [
+        "Pujol",
+        "El Cardenal",
+        "Contramar",
+        "La Casa de Toño",
+        "El Turix"
+      ],
+      "playas": [
+        "Acapulco",
+        "Cancún"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Four Seasons Hotel",
+          "precio_noche_usd": 350
+        },
+        {
+          "nombre": "Hotel María Isabel",
+          "precio_noche_usd": 180
+        },
+        {
+          "nombre": "Ibis Mexico City Alameda",
+          "precio_noche_usd": 60
+        }
+      ],
+      "transporte": 0.9,
+      "clima": [
+        "Primavera: 20-28°C",
+        "Verano: 18-30°C",
+        "Otoño: 15-25°C",
+        "Invierno: 5-20°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Zócalo",
+          "horarios": "24 horas"
+        },
+        {
+          "nombre": "Museo Frida Kahlo",
+          "horarios": "10:00 AM - 5:00 PM"
+        },
+        {
+          "nombre": "Castillo de Chapultepec",
+          "horarios": "9:00 AM - 8:00 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (marzo a mayo): Buen clima y precios moderados.",
+        "Verano (junio a agosto): Alta temporada, lluvias.",
+        "Otoño (septiembre a noviembre): Clima agradable, menos turistas."
+      ]
+    },
+    {
+      "id": 5,
+      "pais": "Brasil",
+      "ciudad": "Río de Janeiro",
+      "descripcion": "Famosa por sus playas, el Carnaval y el Cristo Redentor, Río es un destino turístico vibrante en Brasil.",
+      "comida": [
+        "Oro",
+        "Fogo de Chão",
+        "Cipriani",
+        "Pirá",
+        "Confeitaria Colombo"
+      ],
+      "playas": [
+        "Copacabana",
+        "Ipanema"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Copacabana Palace",
+          "precio_noche_usd": 450
+        },
+        {
+          "nombre": "Hotel Fasano",
+          "precio_noche_usd": 300
+        },
+        {
+          "nombre": "Ibis Rio de Janeiro",
+          "precio_noche_usd": 80
+        }
+      ],
+      "transporte": 1.5,
+      "clima": [
+        "Primavera: 20-30°C",
+        "Verano: 25-35°C",
+        "Otoño: 20-28°C",
+        "Invierno: 18-25°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Cristo Redentor",
+          "horarios": "8:00 AM - 7:00 PM"
+        },
+        {
+          "nombre": "Pan de Azúcar",
+          "horarios": "8:00 AM - 10:00 PM"
+        },
+        {
+          "nombre": "Jardín Botánico",
+          "horarios": "8:00 AM - 5:00 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (septiembre a noviembre): Clima ideal.",
+        "Verano (diciembre a febrero): Alta temporada, cálido.",
+        "Otoño (marzo a mayo): Menos turistas, buen clima."
+      ]
+    },
+    {
+      "id": 6,
+      "pais": "Estados Unidos",
+      "ciudad": "Nueva York",
+      "descripcion": "Ciudad vibrante conocida por su diversidad y cultura. Nueva York es famosa por su arquitectura, arte y vida nocturna.",
+      "comida": [
+        "Le Bernardin",
+        "Eleven Madison Park",
+        "Katz's Delicatessen",
+        "Shake Shack",
+        "Joe's Pizza"
+      ],
+      "playas": [
+        "Coney Island",
+        "Rockaway Beach"
+      ],
+      "hoteles": [
+        {
+          "nombre": "The Plaza Hotel",
+          "precio_noche_usd": 900
+        },
+        {
+          "nombre": "The Standard",
+          "precio_noche_usd": 350
+        },
+        {
+          "nombre": "Pod 51",
+          "precio_noche_usd": 150
+        }
+      ],
+      "transporte": 2.75,
+      "clima": [
+        "Primavera: 10-20°C",
+        "Verano: 20-30°C",
+        "Otoño: 10-20°C",
+        "Invierno: -5-5°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Estatua de la Libertad",
+          "horarios": "8:00 AM - 4:00 PM"
+        },
+        {
+          "nombre": "Central Park",
+          "horarios": "6:00 AM - 1:00 AM"
+        },
+        {
+          "nombre": "Museo Metropolitano de Arte",
+          "horarios": "10:00 AM - 5:30 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (marzo a mayo): Buen clima y menos turistas.",
+        "Otoño (septiembre a noviembre): Hermosos colores otoñales.",
+        "Verano (junio a agosto): Alta temporada, más caro, más turistas."
+      ]
+    },
+    {
+      "id": 7,
       "pais": "Japón",
       "ciudad": "Tokio",
-      "restaurantes": [
+      "descripcion": "Ciudad futurista con una rica tradición cultural. Tokio es un destino que mezcla lo moderno con lo antiguo.",
+      "comida": [
         "Sukiyabashi Jiro",
-        "Ichiran Ramen"
+        "Narisawa",
+        "Gyukatsu Motomura",
+        "Ichiryu",
+        "Ramen Nagi"
       ],
-      "transporte_publico_usd": 1.8,
-      "tiquete_avion_usd": 1200,
-      "comidas_tipicas": [
-        "Sushi",
-        "Ramen"
+      "playas": [
+        "Odaiba",
+        "Kamakura"
       ],
-      "sitios_turisticos": [
-        "Templo Senso-ji",
-        "Shibuya Crossing"
+      "hoteles": [
+        {
+          "nombre": "The Peninsula Tokyo",
+          "precio_noche_usd": 800
+        },
+        {
+          "nombre": "Park Hotel Tokyo",
+          "precio_noche_usd": 250
+        },
+        {
+          "nombre": "Capsule Hotel Anshin Oyado",
+          "precio_noche_usd": 50
+        }
       ],
-      "playas_famosas": [
-        "Playa de Zushi"
+      "transporte": 2.5,
+      "clima": [
+        "Primavera: 10-20°C",
+        "Verano: 20-30°C",
+        "Otoño: 10-20°C",
+        "Invierno: 0-10°C"
       ],
-      "costo_promedio_hotel_usd": 100
+      "sitios": [
+        {
+          "nombre": "Templo Senso-ji",
+          "horarios": "6:00 AM - 5:00 PM"
+        },
+        {
+          "nombre": "Torre de Tokio",
+          "horarios": "9:00 AM - 11:00 PM"
+        },
+        {
+          "nombre": "Shibuya Crossing",
+          "horarios": "24 horas"
+        }
+      ],
+      "fechas": [
+        "Primavera (marzo a mayo): Temporada de floración de cerezos.",
+        "Otoño (septiembre a noviembre): Hermosos colores otoñales.",
+        "Verano (junio a agosto): Alta temporada, más caro, más turistas."
+      ]
+    },
+    {
+      "id": 8,
+      "pais": "Reino Unido",
+      "ciudad": "Londres",
+      "descripcion": "Ciudad histórica con una mezcla de lo antiguo y lo moderno, famosa por su cultura, arquitectura y vida nocturna.",
+      "comida": [
+        "The Ledbury",
+        "Sketch",
+        "Dishoom",
+        "Borough Market",
+        "Duck & Waffle"
+      ],
+      "playas": [
+        "Brighton Beach"
+      ],
+      "hoteles": [
+        {
+          "nombre": "The Ritz London",
+          "precio_noche_usd": 1000
+        },
+        {
+          "nombre": "The Savoy",
+          "precio_noche_usd": 800
+        },
+        {
+          "nombre": "Premier Inn",
+          "precio_noche_usd": 120
+        }
+      ],
+      "transporte": 3.2,
+      "clima": [
+        "Primavera: 10-20°C",
+        "Verano: 15-25°C",
+        "Otoño: 10-20°C",
+        "Invierno: 0-10°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Palacio de Buckingham",
+          "horarios": "9:30 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Museo Británico",
+          "horarios": "10:00 AM - 5:30 PM"
+        },
+        {
+          "nombre": "London Eye",
+          "horarios": "10:00 AM - 8:30 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (marzo a mayo): Clima agradable y menos turistas.",
+        "Otoño (septiembre a noviembre): Hermosos colores otoñales.",
+        "Verano (junio a agosto): Alta temporada, más caro, más turistas."
+      ]
+    },
+    {
+      "id": 9,
+      "pais": "Argentina",
+      "ciudad": "Buenos Aires",
+      "descripcion": "Ciudad vibrante conocida por su tango y arquitectura europea. Buenos Aires es el corazón cultural de Argentina.",
+      "comida": [
+        "Don Julio",
+        "La Cabrera",
+        "El preferido de Palermo",
+        "Cabaña Las Lilas",
+        "El Club de la Milanesa"
+      ],
+      "playas": [
+        "Mar del Plata"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Alvear Palace Hotel",
+          "precio_noche_usd": 700
+        },
+        {
+          "nombre": "Palacio Duhau - Park Hyatt Buenos Aires",
+          "precio_noche_usd": 600
+        },
+        {
+          "nombre": "Hotel Boca",
+          "precio_noche_usd": 100
+        }
+      ],
+      "transporte": 0.5,
+      "clima": [
+        "Primavera: 15-25°C",
+        "Verano: 25-35°C",
+        "Otoño: 10-20°C",
+        "Invierno: 0-10°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "La Boca",
+          "horarios": "9:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "El Obelisco",
+          "horarios": "24 horas"
+        },
+        {
+          "nombre": "Museo de Arte Latinoamericano",
+          "horarios": "10:00 AM - 6:00 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (octubre a diciembre): Ideal para disfrutar de las plazas.",
+        "Verano (enero a febrero): Calor intenso, más turistas.",
+        "Otoño (marzo a mayo): Menos turistas, buen clima."
+      ]
+    },
+    {
+      "id": 10,
+      "pais": "Australia",
+      "ciudad": "Sídney",
+      "descripcion": "Una de las ciudades más icónicas de Australia, conocida por su Ópera, sus playas y su vida cosmopolita.",
+      "comida": [
+        "Quay",
+        "Tetsuya's",
+        "Mr. Wong",
+        "Rockpool Bar & Grill",
+        "The Apollo"
+      ],
+      "playas": [
+        "Bondi Beach",
+        "Manly Beach"
+      ],
+      "hoteles": [
+        {
+          "nombre": "The Langham Sydney",
+          "precio_noche_usd": 650
+        },
+        {
+          "nombre": "Shangri-La Hotel Sydney",
+          "precio_noche_usd": 350
+        },
+        {
+          "nombre": "Ibis Sydney Darling Harbour",
+          "precio_noche_usd": 120
+        }
+      ],
+      "transporte": 3.1,
+      "clima": [
+        "Primavera: 15-25°C",
+        "Verano: 20-30°C",
+        "Otoño: 15-20°C",
+        "Invierno: 5-15°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Ópera de Sídney",
+          "horarios": "9:00 AM - 5:00 PM"
+        },
+        {
+          "nombre": "Puente de la Bahía de Sídney",
+          "horarios": "24 horas"
+        },
+        {
+          "nombre": "Bondi Beach",
+          "horarios": "24 horas"
+        }
+      ],
+      "fechas": [
+        "Primavera (septiembre a noviembre): Buen clima, menos turistas.",
+        "Verano (diciembre a febrero): Alta temporada, más caro.",
+        "Otoño (marzo a mayo): Clima moderado, menos turistas."
+      ]
+    },
+    {
+      "id": 11,
+      "pais": "China",
+      "ciudad": "Pekín",
+      "descripcion": "La capital de China es famosa por su historia imperial y monumentos como la Ciudad Prohibida y la Gran Muralla.",
+      "comida": [
+        "Da Dong",
+        "Quan Ju De",
+        "Haidilao",
+        "The Capital M",
+        "Duck de Chine"
+      ],
+      "playas": [
+        "No tiene"
+      ],
+      "hoteles": [
+        {
+          "nombre": "The Peninsula Beijing",
+          "precio_noche_usd": 650
+        },
+        {
+          "nombre": "W Beijing Chang'an",
+          "precio_noche_usd": 400
+        },
+        {
+          "nombre": "Ibis Beijing Sanyuan",
+          "precio_noche_usd": 80
+        }
+      ],
+      "transporte": 1.2,
+      "clima": [
+        "Primavera: 10-20°C",
+        "Verano: 25-35°C",
+        "Otoño: 10-20°C",
+        "Invierno: -5-5°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Ciudad Prohibida",
+          "horarios": "8:30 AM - 5:00 PM"
+        },
+        {
+          "nombre": "Gran Muralla China",
+          "horarios": "8:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Templo del Cielo",
+          "horarios": "8:00 AM - 5:30 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (abril a junio): Ideal para recorrer la ciudad.",
+        "Verano (julio a agosto): Alta temporada, más calor.",
+        "Otoño (septiembre a noviembre): Buen clima y menos turistas."
+      ]
+    },
+    {
+      "id": 7,
+      "pais": "Japón",
+      "ciudad": "Tokio",
+      "descripcion": "Ciudad futurista con una rica tradición cultural. Tokio es un destino que mezcla lo moderno con lo antiguo.",
+      "comida": [
+        "Sukiyabashi Jiro",
+        "Narisawa",
+        "Gyukatsu Motomura",
+        "Ichiryu",
+        "Ramen Nagi"
+      ],
+      "playas": [
+        "Odaiba",
+        "Kamakura"
+      ],
+      "hoteles": [
+        {
+          "nombre": "The Peninsula Tokyo",
+          "precio_noche_usd": 800
+        },
+        {
+          "nombre": "Park Hotel Tokyo",
+          "precio_noche_usd": 250
+        },
+        {
+          "nombre": "Capsule Hotel Anshin Oyado",
+          "precio_noche_usd": 50
+        }
+      ],
+      "transporte": 2.5,
+      "clima": [
+        "Primavera: 10-20°C",
+        "Verano: 20-30°C",
+        "Otoño: 10-20°C",
+        "Invierno: 0-10°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Templo Senso-ji",
+          "horarios": "6:00 AM - 5:00 PM"
+        },
+        {
+          "nombre": "Torre de Tokio",
+          "horarios": "9:00 AM - 11:00 PM"
+        },
+        {
+          "nombre": "Shibuya Crossing",
+          "horarios": "24 horas"
+        }
+      ],
+      "fechas": [
+        "Primavera (marzo a mayo): Temporada de floración de cerezos.",
+        "Otoño (septiembre a noviembre): Hermosos colores otoñales.",
+        "Verano (junio a agosto): Alta temporada, más caro, más turistas."
+      ]
+    },
+    {
+      "id": 8,
+      "pais": "Reino Unido",
+      "ciudad": "Londres",
+      "descripcion": "Ciudad histórica con una mezcla de lo antiguo y lo moderno, famosa por su cultura, arquitectura y vida nocturna.",
+      "comida": [
+        "The Ledbury",
+        "Sketch",
+        "Dishoom",
+        "Borough Market",
+        "Duck & Waffle"
+      ],
+      "playas": [
+        "Brighton Beach"
+      ],
+      "hoteles": [
+        {
+          "nombre": "The Ritz London",
+          "precio_noche_usd": 1000
+        },
+        {
+          "nombre": "The Savoy",
+          "precio_noche_usd": 800
+        },
+        {
+          "nombre": "Premier Inn",
+          "precio_noche_usd": 120
+        }
+      ],
+      "transporte": 3.2,
+      "clima": [
+        "Primavera: 10-20°C",
+        "Verano: 15-25°C",
+        "Otoño: 10-20°C",
+        "Invierno: 0-10°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Palacio de Buckingham",
+          "horarios": "9:30 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Museo Británico",
+          "horarios": "10:00 AM - 5:30 PM"
+        },
+        {
+          "nombre": "London Eye",
+          "horarios": "10:00 AM - 8:30 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (marzo a mayo): Clima agradable y menos turistas.",
+        "Otoño (septiembre a noviembre): Hermosos colores otoñales.",
+        "Verano (junio a agosto): Alta temporada, más caro, más turistas."
+      ]
+    },
+    {
+      "id": 9,
+      "pais": "Argentina",
+      "ciudad": "Buenos Aires",
+      "descripcion": "Ciudad vibrante conocida por su tango y arquitectura europea. Buenos Aires es el corazón cultural de Argentina.",
+      "comida": [
+        "Don Julio",
+        "La Cabrera",
+        "El preferido de Palermo",
+        "Cabaña Las Lilas",
+        "El Club de la Milanesa"
+      ],
+      "playas": [
+        "Mar del Plata"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Alvear Palace Hotel",
+          "precio_noche_usd": 700
+        },
+        {
+          "nombre": "Palacio Duhau - Park Hyatt Buenos Aires",
+          "precio_noche_usd": 600
+        },
+        {
+          "nombre": "Hotel Boca",
+          "precio_noche_usd": 100
+        }
+      ],
+      "transporte": 0.5,
+      "clima": [
+        "Primavera: 15-25°C",
+        "Verano: 25-35°C",
+        "Otoño: 10-20°C",
+        "Invierno: 0-10°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "La Boca",
+          "horarios": "9:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "El Obelisco",
+          "horarios": "24 horas"
+        },
+        {
+          "nombre": "Museo de Arte Latinoamericano",
+          "horarios": "10:00 AM - 6:00 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (octubre a diciembre): Ideal para disfrutar de las plazas.",
+        "Verano (enero a febrero): Calor intenso, más turistas.",
+        "Otoño (marzo a mayo): Menos turistas, buen clima."
+      ]
+    },
+    {
+      "id": 10,
+      "pais": "Australia",
+      "ciudad": "Sídney",
+      "descripcion": "Una de las ciudades más icónicas de Australia, conocida por su Ópera, sus playas y su vida cosmopolita.",
+      "comida": [
+        "Quay",
+        "Tetsuya's",
+        "Mr. Wong",
+        "Rockpool Bar & Grill",
+        "The Apollo"
+      ],
+      "playas": [
+        "Bondi Beach",
+        "Manly Beach"
+      ],
+      "hoteles": [
+        {
+          "nombre": "The Langham Sydney",
+          "precio_noche_usd": 650
+        },
+        {
+          "nombre": "Shangri-La Hotel Sydney",
+          "precio_noche_usd": 350
+        },
+        {
+          "nombre": "Ibis Sydney Darling Harbour",
+          "precio_noche_usd": 120
+        }
+      ],
+      "transporte": 3.1,
+      "clima": [
+        "Primavera: 15-25°C",
+        "Verano: 20-30°C",
+        "Otoño: 15-20°C",
+        "Invierno: 5-15°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Ópera de Sídney",
+          "horarios": "9:00 AM - 5:00 PM"
+        },
+        {
+          "nombre": "Puente de la Bahía de Sídney",
+          "horarios": "24 horas"
+        },
+        {
+          "nombre": "Bondi Beach",
+          "horarios": "24 horas"
+        }
+      ],
+      "fechas": [
+        "Primavera (septiembre a noviembre): Buen clima, menos turistas.",
+        "Verano (diciembre a febrero): Alta temporada, más caro.",
+        "Otoño (marzo a mayo): Clima moderado, menos turistas."
+      ]
+    },
+    {
+      "id": 11,
+      "pais": "China",
+      "ciudad": "Pekín",
+      "descripcion": "La capital de China es famosa por su historia imperial y monumentos como la Ciudad Prohibida y la Gran Muralla.",
+      "comida": [
+        "Da Dong",
+        "Quan Ju De",
+        "Haidilao",
+        "The Capital M",
+        "Duck de Chine"
+      ],
+      "playas": [
+        "No tiene"
+      ],
+      "hoteles": [
+        {
+          "nombre": "The Peninsula Beijing",
+          "precio_noche_usd": 650
+        },
+        {
+          "nombre": "W Beijing Chang'an",
+          "precio_noche_usd": 400
+        },
+        {
+          "nombre": "Ibis Beijing Sanyuan",
+          "precio_noche_usd": 80
+        }
+      ],
+      "transporte": 1.2,
+      "clima": [
+        "Primavera: 10-20°C",
+        "Verano: 25-35°C",
+        "Otoño: 10-20°C",
+        "Invierno: -5-5°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Ciudad Prohibida",
+          "horarios": "8:30 AM - 5:00 PM"
+        },
+        {
+          "nombre": "Gran Muralla China",
+          "horarios": "8:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Templo del Cielo",
+          "horarios": "8:00 AM - 5:30 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (abril a junio): Ideal para recorrer la ciudad.",
+        "Verano (julio a agosto): Alta temporada, más calor.",
+        "Otoño (septiembre a noviembre): Buen clima y menos turistas."
+      ]
+    },
+    {
+      "id": 12,
+      "pais": "Colombia",
+      "ciudad": "Bogotá",
+      "descripcion": "Bogotá, la capital de Colombia, es conocida por su rica historia, museos y hermosas vistas desde los cerros.",
+      "comida": [
+        "Andrés Carne de Res - ",
+        "La Plaza de Andrés -",
+        "El Cielo - ",
+        "Café San Alberto - ",
+        "La Brasserie. "
+      ],
+      "playas": [
+        "No tiene"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Hotel de la Opera",
+          "precio_noche_usd": 150
+        },
+        {
+          "nombre": "JW Marriott Hotel Bogotá",
+          "precio_noche_usd": 250
+        },
+        {
+          "nombre": "Ibis Bogotá Museo",
+          "precio_noche_usd": 60
+        }
+      ],
+      "transporte": 0.8,
+      "clima": [
+        "Primavera: 10-20°C - ",
+        "Verano: 15-25°C - ",
+        "Otoño: 10-20°C - ",
+        "Invierno: 5-15°C."
+      ],
+      "sitios": [
+        {
+          "nombre": "Museo del Oro",
+          "horarios": "9:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Cerro Monserrate",
+          "horarios": "9:00 AM - 9:00 PM"
+        },
+        {
+          "nombre": "Plaza Bolívar",
+          "horarios": "24 horas"
+        }
+      ],
+      "fechas": [
+        "Primavera (abril a junio): Clima moderado y buenas actividades al aire libre. - ",
+        "Verano (julio a agosto): Menos lluvia, más turistas. - ",
+        "Otoño (septiembre a noviembre): Buen clima y menos turistas."
+      ]
+    },
+    {
+      "id": 13,
+      "pais": "Chile",
+      "ciudad": "Santiago",
+      "descripcion": "Santiago es la capital de Chile, rodeada por montañas y con una vibrante vida cultural, moderna y gastronómica.",
+      "comida": [
+        "Boragó",
+        "La Mar",
+        "Liguria",
+        "Café de la Plaza",
+        "El Hoyo"
+      ],
+      "playas": [
+        "Viña del Mar"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Hotel Santiago",
+          "precio_noche_usd": 180
+        },
+        {
+          "nombre": "The Singular Santiago",
+          "precio_noche_usd": 350
+        },
+        {
+          "nombre": "Ibis Santiago Providencia",
+          "precio_noche_usd": 60
+        }
+      ],
+      "transporte": 0.7,
+      "clima": [
+        "Primavera: 15-25°C",
+        "Verano: 20-35°C",
+        "Otoño: 10-20°C",
+        "Invierno: 5-15°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Cerro San Cristóbal",
+          "horarios": "9:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Museo de la Memoria",
+          "horarios": "10:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Plaza de Armas",
+          "horarios": "24 horas"
+        }
+      ],
+      "fechas": [
+        "Primavera (septiembre a noviembre): Clima ideal para caminar por la ciudad.",
+        "Verano (diciembre a febrero): Alta temporada, más calor.",
+        "Otoño (marzo a mayo): Buen clima y menos turistas."
+      ]
+    },
+    {
+      "id": 14,
+      "pais": "Perú",
+      "ciudad": "Lima",
+      "descripcion": "Lima, la capital de Perú, es conocida por su gastronomía, historia colonial y hermosas vistas del Pacífico.",
+      "comida": [
+        "Central",
+        "Maido",
+        "Astrid y Gastón",
+        "Pescados Capitales",
+        "La Mar"
+      ],
+      "playas": [
+        "Costa Verde",
+        "Playa Waikiki"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Hotel B",
+          "precio_noche_usd": 300
+        },
+        {
+          "nombre": "Belmond Miraflores Park",
+          "precio_noche_usd": 450
+        },
+        {
+          "nombre": "Ibis Lima Reducto Miraflores",
+          "precio_noche_usd": 80
+        }
+      ],
+      "transporte": 1.5,
+      "clima": [
+        "Primavera: 15-25°C",
+        "Verano: 25-35°C",
+        "Otoño: 15-25°C",
+        "Invierno: 10-20°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Plaza Mayor",
+          "horarios": "24 horas"
+        },
+        {
+          "nombre": "Museo Larco",
+          "horarios": "9:00 AM - 10:00 PM"
+        },
+        {
+          "nombre": "Parque Kennedy",
+          "horarios": "24 horas"
+        }
+      ],
+      "fechas": [
+        "Primavera (marzo a mayo): Buen clima para explorar la ciudad.",
+        "Verano (diciembre a febrero): Alta temporada, mucho calor.",
+        "Otoño (marzo a mayo): Menos turistas, buen clima."
+      ]
+    },
+    {
+      "id": 15,
+      "pais": "Canadá",
+      "ciudad": "Toronto",
+      "descripcion": "Toronto es la ciudad más grande de Canadá, conocida por su diversidad cultural, arquitectura moderna y la icónica CN Tower.",
+      "comida": [
+        "Alo",
+        "Buca",
+        "Momofuku",
+        "Canoe",
+        "Kōjin"
+      ],
+      "playas": [
+        "Scarborough Beach",
+        "Kew-Balmy Beach"
+      ],
+      "hoteles": [
+        {
+          "nombre": "The Ritz-Carlton",
+          "precio_noche_usd": 500
+        },
+        {
+          "nombre": "Shangri-La Hotel",
+          "precio_noche_usd": 400
+        },
+        {
+          "nombre": "Ibis Toronto Yorkdale",
+          "precio_noche_usd": 100
+        }
+      ],
+      "transporte": 2.8,
+      "clima": [
+        "Primavera: 10-20°C",
+        "Verano: 20-30°C",
+        "Otoño: 10-20°C",
+        "Invierno: -5-5°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "CN Tower",
+          "horarios": "9:00 AM - 10:00 PM"
+        },
+        {
+          "nombre": "Royal Ontario Museum",
+          "horarios": "10:00 AM - 5:30 PM"
+        },
+        {
+          "nombre": "Distillery District",
+          "horarios": "24 horas"
+        }
+      ],
+      "fechas": [
+        "Primavera (abril a junio): Clima moderado y menos turistas.",
+        "Verano (julio a agosto): Alta temporada, cálido.",
+        "Otoño (septiembre a noviembre): Hermosos colores de otoño."
+      ]
+    },
+    {
+      "id": 16,
+      "pais": "China",
+      "ciudad": "Shanghái",
+      "descripcion": "Shanghái, una de las ciudades más grandes y cosmopolitas de China, famosa por su arquitectura moderna y su ambiente animado.",
+      "comida": [
+        "Ultraviolet",
+        "Jade Garden",
+        "Fu 1088",
+        "Dintaifung",
+        "The Commune Social"
+      ],
+      "playas": [
+        "No tiene"
+      ],
+      "hoteles": [
+        {
+          "nombre": "The Peninsula Shanghai",
+          "precio_noche_usd": 700
+        },
+        {
+          "nombre": "W Shanghai",
+          "precio_noche_usd": 400
+        },
+        {
+          "nombre": "Ibis Shanghai Lianyang",
+          "precio_noche_usd": 50
+        }
+      ],
+      "transporte": 1.5,
+      "clima": [
+        "Primavera: 10-20°C",
+        "Verano: 25-35°C",
+        "Otoño: 10-20°C",
+        "Invierno: -5-5°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "El Bund",
+          "horarios": "24 horas"
+        },
+        {
+          "nombre": "Jardín Yuyuan",
+          "horarios": "9:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Torre Jin Mao",
+          "horarios": "8:30 AM - 10:00 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (marzo a mayo): Clima ideal para caminar por la ciudad.",
+        "Verano (junio a agosto): Alta temporada, cálido.",
+        "Otoño (septiembre a noviembre): Menos lluvias, mejor clima."
+      ]
+    },
+    {
+      "id": 17,
+      "pais": "Italia",
+      "ciudad": "Milán",
+      "descripcion": "Milán es la capital de la moda y el diseño, famosa por su arquitectura renacentista, museos y la última cena de Da Vinci.",
+      "comida": [
+        "Nobu Milan",
+        "Cracco",
+        "Al Pont de Ferr",
+        "Il Luogo di Aimo e Nadia",
+        "Osteria del Binari"
+      ],
+      "playas": [
+        "No tiene"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Hotel Principe di Savoia",
+          "precio_noche_usd": 750
+        },
+        {
+          "nombre": "Four Seasons Hotel Milano",
+          "precio_noche_usd": 700
+        },
+        {
+          "nombre": "Ibis Milano Centro",
+          "precio_noche_usd": 80
+        }
+      ],
+      "transporte": 1.8,
+      "clima": [
+        "Primavera: 10-20°C",
+        "Verano: 20-30°C",
+        "Otoño: 10-20°C",
+        "Invierno: -5-5°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Catedral de Milán",
+          "horarios": "8:00 AM - 7:00 PM"
+        },
+        {
+          "nombre": "Galería Vittorio Emanuele II",
+          "horarios": "10:00 AM - 7:00 PM"
+        },
+        {
+          "nombre": "Museo de la Ciencia y la Tecnología",
+          "horarios": "9:30 AM - 5:30 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (abril a junio): Ideal para paseos por la ciudad.",
+        "Verano (julio a agosto): Más calor y más turistas.",
+        "Otoño (septiembre a noviembre): Menos turistas, buen clima."
+      ]
+    },
+    {
+      "id": 18,
+      "pais": "Egipto",
+      "ciudad": "El Cairo",
+      "descripcion": "El Cairo, la capital de Egipto, es famosa por sus monumentos antiguos como las Pirámides de Giza y la Esfinge.",
+      "comida": [
+        "El Fishawi",
+        "Abou El Sid",
+        "Sequoia",
+        "Nile Pharaoh",
+        "Cairo Kitchen"
+      ],
+      "playas": [
+        "Sharm El Sheikh"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Four Seasons Cairo at Nile Plaza",
+          "precio_noche_usd": 600
+        },
+        {
+          "nombre": "InterContinental Cairo Semiramis",
+          "precio_noche_usd": 400
+        },
+        {
+          "nombre": "Ibis Cairo City Center",
+          "precio_noche_usd": 90
+        }
+      ],
+      "transporte": 1.2,
+      "clima": [
+        "Primavera: 20-30°C",
+        "Verano: 30-40°C",
+        "Otoño: 20-30°C",
+        "Invierno: 10-20°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Pirámides de Giza",
+          "horarios": "8:00 AM - 5:00 PM"
+        },
+        {
+          "nombre": "Museo Egipcio",
+          "horarios": "9:00 AM - 7:00 PM"
+        },
+        {
+          "nombre": "Cairo Tower",
+          "horarios": "9:00 AM - 10:00 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (marzo a mayo): Clima ideal.",
+        "Verano (junio a agosto): Alta temporada, calor intenso.",
+        "Otoño (septiembre a noviembre): Menos turistas, buen clima."
+      ]
+    },
+    {
+      "id": 19,
+      "pais": "Sudáfrica",
+      "ciudad": "Ciudad del Cabo",
+      "descripcion": "Ciudad costera conocida por su historia, montañas, playas y viñedos cercanos.",
+      "comida": [
+        "The Test Kitchen",
+        "La Colombe",
+        "The Pot Luck Club",
+        "Kloof Street House",
+        "The Greenhouse"
+      ],
+      "playas": [
+        "Camps Bay",
+        "Clifton Beach"
+      ],
+      "hoteles": [
+        {
+          "nombre": "One&Only Cape Town",
+          "precio_noche_usd": 550
+        },
+        {
+          "nombre": "The Silo Hotel",
+          "precio_noche_usd": 900
+        },
+        {
+          "nombre": "Ibis Cape Town",
+          "precio_noche_usd": 100
+        }
+      ],
+      "transporte": 2,
+      "clima": [
+        "Primavera: 15-25°C",
+        "Verano: 20-30°C",
+        "Otoño: 10-20°C",
+        "Invierno: 5-15°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Table Mountain",
+          "horarios": "8:00 AM - 5:00 PM"
+        },
+        {
+          "nombre": "Robben Island",
+          "horarios": "9:00 AM - 4:00 PM"
+        },
+        {
+          "nombre": "V&A Waterfront",
+          "horarios": "24 horas"
+        }
+      ],
+      "fechas": [
+        "Primavera (septiembre a noviembre): Clima ideal.",
+        "Verano (diciembre a febrero): Alta temporada, más cálido.",
+        "Otoño (marzo a mayo): Menos turistas, buen clima."
+      ]
+    },
+    {
+      "id": 20,
+      "pais": "Tailandia",
+      "ciudad": "Bangkok",
+      "descripcion": "Bangkok es una ciudad vibrante conocida por sus templos, mercados flotantes y vida nocturna.",
+      "comida": [
+        "Gaggan",
+        "Saneh Jaan",
+        "Nahm",
+        "Bo.Lan",
+        "Jay Fai"
+      ],
+      "playas": [
+        "Koh Samet"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Mandarin Oriental Bangkok",
+          "precio_noche_usd": 500
+        },
+        {
+          "nombre": "The Siam",
+          "precio_noche_usd": 350
+        },
+        {
+          "nombre": "Ibis Bangkok Riverside",
+          "precio_noche_usd": 80
+        }
+      ],
+      "transporte": 1,
+      "clima": [
+        "Primavera: 25-35°C",
+        "Verano: 30-40°C",
+        "Otoño: 25-35°C",
+        "Invierno: 20-30°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Gran Palacio",
+          "horarios": "8:30 AM - 3:30 PM"
+        },
+        {
+          "nombre": "Wat Arun",
+          "horarios": "8:00 AM - 5:30 PM"
+        },
+        {
+          "nombre": "Mercado Flotante Damnoen Saduak",
+          "horarios": "7:00 AM - 2:00 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (marzo a mayo): Alta temporada, mucho calor.",
+        "Verano (junio a agosto): Lluvias frecuentes.",
+        "Otoño (septiembre a noviembre): Menos lluvias, buen clima."
+      ]
+    },
+    {
+      "id": 21,
+      "pais": "Italia",
+      "ciudad": "Florencia",
+      "descripcion": "Florencia es conocida como la cuna del Renacimiento y es famosa por su arte, arquitectura y cultura.",
+      "comida": [
+        "Osteria All'Antico Vinaio",
+        "La Giostra",
+        "Il Latini",
+        "Trattoria Zà Zà",
+        "Cibrèo"
+      ],
+      "playas": [
+        "No tiene"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Hotel Savoy",
+          "precio_noche_usd": 600
+        },
+        {
+          "nombre": "Hotel Lungarno",
+          "precio_noche_usd": 350
+        },
+        {
+          "nombre": "Ibis Firenze Centro",
+          "precio_noche_usd": 120
+        }
+      ],
+      "transporte": 1.5,
+      "clima": [
+        "Primavera: 10-20°C",
+        "Verano: 20-30°C",
+        "Otoño: 10-20°C",
+        "Invierno: 5-10°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Catedral de Santa María del Fiore",
+          "horarios": "10:00 AM - 5:00 PM"
+        },
+        {
+          "nombre": "Galería Uffizi",
+          "horarios": "8:15 AM - 6:50 PM"
+        },
+        {
+          "nombre": "Ponte Vecchio",
+          "horarios": "24 horas"
+        }
+      ],
+      "fechas": [
+        "Primavera (abril a junio): Clima ideal para recorrer la ciudad.",
+        "Verano (julio a agosto): Más calor, turistas y precios más altos.",
+        "Otoño (septiembre a noviembre): Clima moderado y menos turistas."
+      ]
+    },
+    {
+      "id": 22,
+      "pais": "México",
+      "ciudad": "Cancún",
+      "descripcion": "Cancún es un destino turístico mundialmente conocido por sus playas de arena blanca y aguas cristalinas del Caribe.",
+      "comida": [
+        "La Habichuela",
+        "Porfirio's",
+        "El Fish Fritanga",
+        "Puerto Madero",
+        "Lorenzillo's"
+      ],
+      "playas": [
+        "Playa Delfines",
+        "Playa Chac Mool"
+      ],
+      "hoteles": [
+        {
+          "nombre": "The Ritz-Carlton",
+          "precio_noche_usd": 500
+        },
+        {
+          "nombre": "Hotel Casa Blanca Boutique & Organic",
+          "precio_noche_usd": 300
+        },
+        {
+          "nombre": "Ibis Cancun Centro",
+          "precio_noche_usd": 90
+        }
+      ],
+      "transporte": 1.3,
+      "clima": [
+        "Primavera: 25-35°C",
+        "Verano: 30-40°C",
+        "Otoño: 25-35°C",
+        "Invierno: 20-30°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Zona Arqueológica de El Rey",
+          "horarios": "8:00 AM - 4:00 PM"
+        },
+        {
+          "nombre": "Isla Mujeres",
+          "horarios": "24 horas"
+        },
+        {
+          "nombre": "Xcaret Park",
+          "horarios": "8:30 AM - 10:00 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (marzo a mayo): Buen clima, ideal para disfrutar de la playa.",
+        "Verano (junio a agosto): Alta temporada, más calor y turistas.",
+        "Otoño (septiembre a noviembre): Menos turistas y buen clima."
+      ]
+    },
+    {
+      "id": 23,
+      "pais": "Australia",
+      "ciudad": "Melbourne",
+      "descripcion": "Melbourne es conocida por su vibrante escena artística, su arquitectura moderna y sus eventos culturales.",
+      "comida": [
+        "Attica",
+        "Chin Chin",
+        "The Press Club",
+        "Cutler & Co.",
+        "MoVida"
+      ],
+      "playas": [
+        "St Kilda Beach",
+        "Brighton Beach"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Crown Towers",
+          "precio_noche_usd": 450
+        },
+        {
+          "nombre": "The Langham Melbourne",
+          "precio_noche_usd": 350
+        },
+        {
+          "nombre": "Ibis Melbourne Hotel",
+          "precio_noche_usd": 100
+        }
+      ],
+      "transporte": 2.4,
+      "clima": [
+        "Primavera: 10-20°C",
+        "Verano: 20-30°C",
+        "Otoño: 15-25°C",
+        "Invierno: 5-15°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Federation Square",
+          "horarios": "24 horas"
+        },
+        {
+          "nombre": "Royal Botanic Gardens",
+          "horarios": "7:30 AM - 7:00 PM"
+        },
+        {
+          "nombre": "National Gallery of Victoria",
+          "horarios": "10:00 AM - 5:00 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (septiembre a noviembre): Clima agradable para pasear.",
+        "Verano (diciembre a febrero): Alta temporada, más cálido.",
+        "Otoño (marzo a mayo): Menos turistas, buen clima."
+      ]
+    },
+    {
+      "id": 24,
+      "pais": "Egipto",
+      "ciudad": "Luxor",
+      "descripcion": "Luxor es conocida como el museo al aire libre más grande del mundo, con templos y tumbas de la antigua civilización egipcia.",
+      "comida": [
+        "Sofra",
+        "El Hussein",
+        "Al Moudira",
+        "Sunset Restaurant",
+        "Nile River Restaurant"
+      ],
+      "playas": [
+        "No tiene"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Sofitel Winter Palace Luxor",
+          "precio_noche_usd": 400
+        },
+        {
+          "nombre": "Hilton Luxor Resort & Spa",
+          "precio_noche_usd": 300
+        },
+        {
+          "nombre": "Ibis Styles Luxor",
+          "precio_noche_usd": 60
+        }
+      ],
+      "transporte": 1.1,
+      "clima": [
+        "Primavera: 20-30°C",
+        "Verano: 30-40°C",
+        "Otoño: 20-30°C",
+        "Invierno: 10-20°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Templo de Karnak",
+          "horarios": "6:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Valle de los Reyes",
+          "horarios": "6:00 AM - 5:00 PM"
+        },
+        {
+          "nombre": "Museo de Luxor",
+          "horarios": "9:00 AM - 9:00 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (marzo a mayo): Buen clima para explorar los templos.",
+        "Verano (junio a agosto): Calor extremo, menos turistas.",
+        "Otoño (septiembre a noviembre): Menos calor, buen clima."
+      ]
+    },
+    {
+      "id": 25,
+      "pais": "Estados Unidos",
+      "ciudad": "Los Ángeles",
+      "descripcion": "Los Ángeles es conocida por su industria cinematográfica, su vibrante vida nocturna y sus famosos lugares turísticos.",
+      "comida": [
+        "n/naka",
+        "Providence",
+        "République",
+        "Bestia",
+        "Animal"
+      ],
+      "playas": [
+        "Santa Monica",
+        "Venice Beach"
+      ],
+      "hoteles": [
+        {
+          "nombre": "The Ritz-Carlton, Los Angeles",
+          "precio_noche_usd": 600
+        },
+        {
+          "nombre": "The Standard, Downtown LA",
+          "precio_noche_usd": 200
+        },
+        {
+          "nombre": "Ibis Los Angeles",
+          "precio_noche_usd": 90
+        }
+      ],
+      "transporte": 3,
+      "clima": [
+        "Primavera: 15-25°C",
+        "Verano: 20-30°C",
+        "Otoño: 15-25°C",
+        "Invierno: 10-20°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Hollywood Sign",
+          "horarios": "24 horas"
+        },
+        {
+          "nombre": "Universal Studios Hollywood",
+          "horarios": "9:00 AM - 9:00 PM"
+        },
+        {
+          "nombre": "Santa Monica Pier",
+          "horarios": "24 horas"
+        }
+      ],
+      "fechas": [
+        "Primavera (marzo a mayo): Clima ideal para recorrer la ciudad.",
+        "Verano (junio a agosto): Alta temporada, mucho calor.",
+        "Otoño (septiembre a noviembre): Menos turistas y buen clima."
+      ]
+    },
+    {
+      "id": 26,
+      "pais": "Turquía",
+      "ciudad": "Estambul",
+      "descripcion": "Estambul es una ciudad transcontinental que conecta Europa y Asia, famosa por sus monumentos históricos y su cultura única.",
+      "comida": [
+        "Ciya Sofrası",
+        "Nusr-Et",
+        "Mikla",
+        "Pandeli",
+        "Sultanahmet Köftecisi"
+      ],
+      "playas": [
+        "Kilyos",
+        "Büyükçekmece"
+      ],
+      "hoteles": [
+        {
+          "nombre": "The Ritz-Carlton Istanbul",
+          "precio_noche_usd": 550
+        },
+        {
+          "nombre": "Four Seasons Hotel Istanbul at Sultanahmet",
+          "precio_noche_usd": 650
+        },
+        {
+          "nombre": "Ibis Istanbul",
+          "precio_noche_usd": 90
+        }
+      ],
+      "transporte": 1.8,
+      "clima": [
+        "Primavera: 10-20°C",
+        "Verano: 20-30°C",
+        "Otoño: 10-20°C",
+        "Invierno: 0-10°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Santa Sofía",
+          "horarios": "9:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Palacio Topkapi",
+          "horarios": "9:00 AM - 5:00 PM"
+        },
+        {
+          "nombre": "Gran Bazar",
+          "horarios": "9:00 AM - 7:00 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (marzo a mayo): Ideal para paseos turísticos.",
+        "Verano (junio a agosto): Alta temporada, más calor.",
+        "Otoño (septiembre a noviembre): Buen clima, menos turistas."
+      ]
+    },
+    {
+      "id": 27,
+      "pais": "Tailandia",
+      "ciudad": "Chiang Mai",
+      "descripcion": "Chiang Mai, ubicada en el norte de Tailandia, es conocida por su cultura, templos y montañas.",
+      "comida": [
+        "Khao Soi Khun Yai",
+        "The Riverside",
+        "Faa Mai",
+        "La Terrasse",
+        "Café de Nimmanhaemin"
+      ],
+      "playas": [
+        "No tiene"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Anantara Chiang Mai Resort",
+          "precio_noche_usd": 250
+        },
+        {
+          "nombre": "Shangri-La Hotel Chiang Mai",
+          "precio_noche_usd": 300
+        },
+        {
+          "nombre": "Ibis Styles Chiang Mai",
+          "precio_noche_usd": 70
+        }
+      ],
+      "transporte": 1,
+      "clima": [
+        "Primavera: 25-35°C",
+        "Verano: 30-40°C",
+        "Otoño: 25-35°C",
+        "Invierno: 20-30°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Templo Doi Suthep",
+          "horarios": "6:00 AM - 5:00 PM"
+        },
+        {
+          "nombre": "Mercado Nocturno de Chiang Mai",
+          "horarios": "5:00 PM - 11:00 PM"
+        },
+        {
+          "nombre": "Jardín Botánico de Queen Sirikit",
+          "horarios": "8:00 AM - 5:00 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (marzo a mayo): Clima caluroso.",
+        "Verano (junio a agosto): Más lluvias.",
+        "Otoño (septiembre a noviembre): Menos lluvias, buen clima."
+      ]
+    },
+    {
+      "id": 28,
+      "pais": "Rusia",
+      "ciudad": "San Petersburgo",
+      "descripcion": "San Petersburgo es la capital cultural de Rusia, conocida por su arquitectura imperial y museos de arte.",
+      "comida": [
+        "Café Pushkin",
+        "Caviar Bar",
+        "Palkin",
+        "Zakuski",
+        "Café Singer"
+      ],
+      "playas": [
+        "No tiene"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Four Seasons Hotel Lion Palace",
+          "precio_noche_usd": 650
+        },
+        {
+          "nombre": "The State Hermitage Museum Hotel",
+          "precio_noche_usd": 350
+        },
+        {
+          "nombre": "Ibis St. Petersburg Centre",
+          "precio_noche_usd": 100
+        }
+      ],
+      "transporte": 1.7,
+      "clima": [
+        "Primavera: 5-15°C",
+        "Verano: 15-25°C",
+        "Otoño: 5-15°C",
+        "Invierno: -5-10°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Museo del Hermitage",
+          "horarios": "10:30 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Catedral de San Isaac",
+          "horarios": "10:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "El Palacio de Catalina",
+          "horarios": "9:00 AM - 5:00 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (marzo a mayo): Buen clima para recorrer la ciudad.",
+        "Verano (junio a agosto): Alta temporada, más cálido.",
+        "Otoño (septiembre a noviembre): Menos turistas, clima agradable."
+      ]
+    },
+    {
+      "id": 29,
+      "pais": "Suecia",
+      "ciudad": "Estocolmo",
+      "descripcion": "Estocolmo, la capital de Suecia, es famosa por su arquitectura moderna y los canales que la atraviesan.",
+      "comida": [
+        "Frantzén",
+        "Oaxen Krog",
+        "Smorgasbord",
+        "Vete-Katten",
+        "Pelikan"
+      ],
+      "playas": [
+        "Långholmen Beach",
+        "Smedsuddsbadet"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Grand Hôtel Stockholm",
+          "precio_noche_usd": 550
+        },
+        {
+          "nombre": "Radisson Blu Royal Viking",
+          "precio_noche_usd": 350
+        },
+        {
+          "nombre": "Ibis Styles Stockholm",
+          "precio_noche_usd": 100
+        }
+      ],
+      "transporte": 2.4,
+      "clima": [
+        "Primavera: 5-15°C",
+        "Verano: 15-25°C",
+        "Otoño: 10-20°C",
+        "Invierno: -5-5°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Museo Vasa",
+          "horarios": "10:00 AM - 5:00 PM"
+        },
+        {
+          "nombre": "Palacio Real",
+          "horarios": "10:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Gamla Stan",
+          "horarios": "24 horas"
+        }
+      ],
+      "fechas": [
+        "Primavera (abril a junio): Clima ideal para recorrer la ciudad.",
+        "Verano (junio a agosto): Alta temporada, cálido.",
+        "Otoño (septiembre a noviembre): Menos turistas, buen clima."
+      ]
+    },
+    {
+      "id": 30,
+      "pais": "Noruega",
+      "ciudad": "Oslo",
+      "descripcion": "Oslo, la capital de Noruega, es conocida por su arquitectura moderna y sus paisajes naturales.",
+      "comida": [
+        "Maaemo",
+        "Fjord Restaurant",
+        "Vippa",
+        "Lofoten Fiskerestaurant",
+        "Solsiden"
+      ],
+      "playas": [
+        "Huk Beach",
+        "Paradisbukta Beach"
+      ],
+      "hoteles": [
+        {
+          "nombre": "The Thief",
+          "precio_noche_usd": 600
+        },
+        {
+          "nombre": "Hotel Continental",
+          "precio_noche_usd": 400
+        },
+        {
+          "nombre": "Ibis Styles Oslo",
+          "precio_noche_usd": 120
+        }
+      ],
+      "transporte": 2.3,
+      "clima": [
+        "Primavera: 5-15°C",
+        "Verano: 15-25°C",
+        "Otoño: 10-20°C",
+        "Invierno: -5-5°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Museo de Barcos Vikingos",
+          "horarios": "9:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Palacio Real de Oslo",
+          "horarios": "10:00 AM - 5:00 PM"
+        },
+        {
+          "nombre": "Parque Vigeland",
+          "horarios": "24 horas"
+        }
+      ],
+      "fechas": [
+        "Primavera (abril a junio): Clima moderado y menos turistas.",
+        "Verano (junio a agosto): Alta temporada, cálido.",
+        "Otoño (septiembre a noviembre): Menos lluvias y buen clima."
+      ]
+    },
+    {
+      "id": 31,
+      "pais": "Finlandia",
+      "ciudad": "Helsinki",
+      "descripcion": "Helsinki es conocida por sus diseños modernos, su arquitectura y su proximidad al mar Báltico.",
+      "comida": [
+        "Olo",
+        "Lappi Restaurant",
+        "Savoy",
+        "Ravintola Nolla",
+        "KuuKuu"
+      ],
+      "playas": [
+        "Helsinki Beach",
+        "Pihlajasaari Island Beach"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Hotel Kämp",
+          "precio_noche_usd": 600
+        },
+        {
+          "nombre": "Scandic Simonkenttä",
+          "precio_noche_usd": 150
+        },
+        {
+          "nombre": "Ibis Helsinki",
+          "precio_noche_usd": 90
+        }
+      ],
+      "transporte": 2,
+      "clima": [
+        "Primavera: 0-10°C",
+        "Verano: 10-20°C",
+        "Otoño: 5-15°C",
+        "Invierno: -10-0°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Fortaleza de Suomenlinna",
+          "horarios": "9:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Catedral de Helsinki",
+          "horarios": "9:00 AM - 4:00 PM"
+        },
+        {
+          "nombre": "Parque Temppeliaukio",
+          "horarios": "10:00 AM - 5:00 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (abril a junio): Ideal para recorrer la ciudad.",
+        "Verano (junio a agosto): Alta temporada, más turistas.",
+        "Otoño (septiembre a noviembre): Menos turistas, buen clima."
+      ]
+    },
+    {
+      "id": 32,
+      "pais": "Suecia",
+      "ciudad": "Gotemburgo",
+      "descripcion": "Gotemburgo es conocida por sus canales, arquitectura medieval y excelente gastronomía, particularmente su marisco.",
+      "comida": [
+        "Sjömagasinet",
+        "Fiskekrogen",
+        "Smaka",
+        "Haga Bageri",
+        "Kaffeverket"
+      ],
+      "playas": [
+        "Saltholmen",
+        "Näset Beach"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Hotel Pigalle",
+          "precio_noche_usd": 200
+        },
+        {
+          "nombre": "Radisson Blu Scandinavia Hotel",
+          "precio_noche_usd": 150
+        },
+        {
+          "nombre": "Ibis Styles Goteborg",
+          "precio_noche_usd": 90
+        }
+      ],
+      "transporte": 2.1,
+      "clima": [
+        "Primavera: 5-15°C",
+        "Verano: 15-25°C",
+        "Otoño: 10-20°C",
+        "Invierno: -5-5°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Universeum",
+          "horarios": "9:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Museo de Arte de Gotemburgo",
+          "horarios": "11:00 AM - 5:00 PM"
+        },
+        {
+          "nombre": "Liseberg",
+          "horarios": "10:00 AM - 7:00 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (abril a junio): Clima ideal para pasear.",
+        "Verano (junio a agosto): Alta temporada, cálido.",
+        "Otoño (septiembre a noviembre): Menos turistas, buen clima."
+      ]
+    },
+    {
+      "id": 33,
+      "pais": "Islandia",
+      "ciudad": "Reikiavik",
+      "descripcion": "Reikiavik es la capital de Islandia, famosa por su arquitectura única, paisajes naturales y aguas termales.",
+      "comida": [
+        "Dill",
+        "Grillmarkadurinn",
+        "Sægreifinn",
+        "Fishmarket",
+        "Matur og Drykkur"
+      ],
+      "playas": [
+        "Nauthólsvík Geothermal Beach"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Hotel Borg by Keahotels",
+          "precio_noche_usd": 300
+        },
+        {
+          "nombre": "Reykjavik Konsulat Hotel",
+          "precio_noche_usd": 200
+        },
+        {
+          "nombre": "Ibis Styles Reykjavik",
+          "precio_noche_usd": 90
+        }
+      ],
+      "transporte": 1.2,
+      "clima": [
+        "Primavera: 0-10°C",
+        "Verano: 10-20°C",
+        "Otoño: 5-15°C",
+        "Invierno: -5-5°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "La Laguna Azul",
+          "horarios": "9:00 AM - 9:00 PM"
+        },
+        {
+          "nombre": "Hallgrímskirkja",
+          "horarios": "9:00 AM - 5:00 PM"
+        },
+        {
+          "nombre": "Gullfoss",
+          "horarios": "24 horas"
+        }
+      ],
+      "fechas": [
+        "Primavera (abril a junio): Clima moderado, menos turistas.",
+        "Verano (junio a agosto): Alta temporada, muchos turistas.",
+        "Otoño (septiembre a noviembre): Menos turistas, buena oportunidad para explorar."
+      ]
+    },
+    {
+      "id": 34,
+      "pais": "Portugal",
+      "ciudad": "Lisboa",
+      "descripcion": "Lisboa es famosa por su arquitectura de azulejos, sus tranvías amarillos y su vibrante vida nocturna.",
+      "comida": [
+        "Alma",
+        "Belcanto",
+        "Taberna da Rua das Flores",
+        "Cervejaria Ramiro",
+        "Time Out Market"
+      ],
+      "playas": [
+        "Praia de Carcavelos",
+        "Praia do Guincho"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Bairro Alto Hotel",
+          "precio_noche_usd": 400
+        },
+        {
+          "nombre": "Four Seasons Hotel Ritz Lisbon",
+          "precio_noche_usd": 500
+        },
+        {
+          "nombre": "Ibis Lisboa Centro",
+          "precio_noche_usd": 90
+        }
+      ],
+      "transporte": 1.6,
+      "clima": [
+        "Primavera: 10-20°C",
+        "Verano: 20-30°C",
+        "Otoño: 10-20°C",
+        "Invierno: 5-15°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Torre de Belém",
+          "horarios": "10:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Museo Calouste Gulbenkian",
+          "horarios": "10:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Oceanário de Lisboa",
+          "horarios": "10:00 AM - 7:00 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (abril a junio): Clima agradable para caminar.",
+        "Verano (junio a agosto): Alta temporada, más turistas.",
+        "Otoño (septiembre a noviembre): Menos turistas, buen clima."
+      ]
+    },
+    {
+      "id": 35,
+      "pais": "Nueva Zelanda",
+      "ciudad": "Auckland",
+      "descripcion": "Auckland es la ciudad más grande de Nueva Zelanda, conocida por su puerto, cultura multicultural y paisajes naturales.",
+      "comida": [
+        "The Grove",
+        "Depot",
+        "Cassia",
+        "Sidart",
+        "The French Cafe"
+      ],
+      "playas": [
+        "Mission Bay",
+        "Rangitoto Island Beach"
+      ],
+      "hoteles": [
+        {
+          "nombre": "SkyCity Grand Hotel",
+          "precio_noche_usd": 300
+        },
+        {
+          "nombre": "Cordis Auckland",
+          "precio_noche_usd": 250
+        },
+        {
+          "nombre": "Ibis Budget Auckland",
+          "precio_noche_usd": 80
+        }
+      ],
+      "transporte": 2.1,
+      "clima": [
+        "Primavera: 10-20°C",
+        "Verano: 20-30°C",
+        "Otoño: 15-25°C",
+        "Invierno: 5-15°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Sky Tower",
+          "horarios": "9:00 AM - 10:00 PM"
+        },
+        {
+          "nombre": "Auckland Museum",
+          "horarios": "10:00 AM - 5:00 PM"
+        },
+        {
+          "nombre": "Wynyard Quarter",
+          "horarios": "24 horas"
+        }
+      ],
+      "fechas": [
+        "Primavera (septiembre a noviembre): Ideal para recorrer la ciudad.",
+        "Verano (diciembre a febrero): Alta temporada, cálido.",
+        "Otoño (marzo a mayo): Menos turistas, buen clima."
+      ]
+    },
+    {
+      "id": 36,
+      "pais": "Egipto",
+      "ciudad": "Alejandría",
+      "descripcion": "Alejandría es una ciudad histórica en la costa mediterránea, famosa por su antigua biblioteca y monumentos egipcios.",
+      "comida": [
+        "Fishawi",
+        "Freska",
+        "Abou Ashraf",
+        "Samakmak",
+        "El Fishawy Cafe"
+      ],
+      "playas": [
+        "Maamoura Beach",
+        "Montazah Beach"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Four Seasons Hotel Alexandria",
+          "precio_noche_usd": 500
+        },
+        {
+          "nombre": "Steigenberger Cecil Hotel",
+          "precio_noche_usd": 200
+        },
+        {
+          "nombre": "Ibis Styles Alexandria",
+          "precio_noche_usd": 70
+        }
+      ],
+      "transporte": 1.3,
+      "clima": [
+        "Primavera: 20-30°C",
+        "Verano: 30-40°C",
+        "Otoño: 20-30°C",
+        "Invierno: 10-20°C"
+      ],
+      "sitios": [
+        {
+          "nombre": "Biblioteca de Alejandría",
+          "horarios": "9:00 AM - 8:00 PM"
+        },
+        {
+          "nombre": "Fortaleza de Qaitbay",
+          "horarios": "8:00 AM - 5:00 PM"
+        },
+        {
+          "nombre": "Museo Nacional de Alejandría",
+          "horarios": "9:00 AM - 6:00 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (marzo a mayo): Buen clima para recorrer los sitios históricos.",
+        "Verano (junio a agosto): Calor intenso, menos turistas.",
+        "Otoño (septiembre a noviembre): Menos calor, buen clima."
+      ]
     }
   ],
   "busquedas": [
     {
-      "id": 1,
+      "id": "3423",
+      "pais": "Colombia",
+      "ciudad": "Bogotá",
+      "descripcion": "Bogotá, la capital de Colombia, es conocida por su rica historia, museos y hermosas vistas desde los cerros.",
+      "comida": [
+        "Andrés Carne de Res - ",
+        "La Plaza de Andrés -",
+        "El Cielo - ",
+        "Café San Alberto - ",
+        "La Brasserie. "
+      ],
+      "playas": [
+        "No tiene"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Hotel de la Opera",
+          "precio_noche_usd": 150
+        },
+        {
+          "nombre": "JW Marriott Hotel Bogotá",
+          "precio_noche_usd": 250
+        },
+        {
+          "nombre": "Ibis Bogotá Museo",
+          "precio_noche_usd": 60
+        }
+      ],
+      "transporte": 0.8,
+      "clima": [
+        "Primavera: 10-20°C - ",
+        "Verano: 15-25°C - ",
+        "Otoño: 10-20°C - ",
+        "Invierno: 5-15°C."
+      ],
+      "sitios": [
+        {
+          "nombre": "Museo del Oro",
+          "horarios": "9:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Cerro Monserrate",
+          "horarios": "9:00 AM - 9:00 PM"
+        },
+        {
+          "nombre": "Plaza Bolívar",
+          "horarios": "24 horas"
+        }
+      ],
+      "fechas": [
+        "Primavera (abril a junio): Clima moderado y buenas actividades al aire libre. - ",
+        "Verano (julio a agosto): Menos lluvia, más turistas. - ",
+        "Otoño (septiembre a noviembre): Buen clima y menos turistas."
+      ]
+    },
+    {
+      "id": "4195",
       "pais": "Francia",
       "ciudad": "París",
-      "restaurantes": [
-        "Le Jules Verne",
-        "Chez Janou"
+      "descripcion": "París, conocida como la Ciudad de la Luz, es famosa por su rica historia, arquitectura icónica y gastronomía de clase mundial.",
+      "comida": [
+        "Le George - Four Seasons Hôtel George V ",
+        "Le Tire-Bouchon Rodier ",
+        "The Blossom Arms ",
+        "Café de l'Homme ",
+        "Pain Vin Fromages "
       ],
-      "transporte_publico_usd": 2.5,
-      "tiquete_avion_usd": 850,
-      "comidas_tipicas": [
-        "Croissant",
-        "Coq au vin"
+      "playas": [
+        "No tiene playas naturales; sin embargo, durante el verano se instala 'Paris Plages' a lo largo del río Sena, ofreciendo arena y tumbonas para los locales y turistas."
       ],
-      "sitios_turisticos": [
-        "Torre Eiffel",
-        "Museo del Louvre"
+      "hoteles": [
+        {
+          "nombre": "Four Seasons Hotel George V",
+          "precio_noche_usd": 1000
+        },
+        {
+          "nombre": "Hôtel de Crillon",
+          "precio_noche_usd": 800
+        },
+        {
+          "nombre": "Ibis Paris Montmartre",
+          "precio_noche_usd": 120
+        }
       ],
-      "playas_famosas": [],
-      "costo_promedio_hotel_usd": 120
+      "transporte": 2.5,
+      "clima": [
+        "Primavera: 15-25°C, agradable.",
+        "Verano: 25-35°C, caluroso.",
+        "Otoño: 10-20°C, fresco.",
+        "Invierno: 0-10°C, frío."
+      ],
+      "sitios": [
+        {
+          "nombre": "Torre Eiffel",
+          "horarios": "9:30 AM - 11:45 PM"
+        },
+        {
+          "nombre": "Museo del Louvre",
+          "horarios": "9:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Catedral de Notre-Dame",
+          "horarios": "7:45 AM - 6:45 PM"
+        }
+      ],
+      "fechas": [
+        "Primavera (abril a junio): Mejor clima y precios moderados.",
+        "Otoño (septiembre a noviembre): Menos turistas y buen clima.",
+        "Verano (julio a agosto): Alta temporada, más caro, más turistas."
+      ]
     }
   ]
 }
