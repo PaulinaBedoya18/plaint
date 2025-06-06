@@ -11,6 +11,8 @@ const Planeador = () => {
   const [historial, setHistorial] = useState([]);
   const [ciudadExpandida, setCiudadExpandida] = useState(null);
 
+  const usuario = JSON.parse(localStorage.getItem("usuario")) || { nombre: "Paulina" };
+
   const cambiarModo = (e) => {
     setModoBusqueda(e.target.value);
     setResultado(null);
@@ -20,9 +22,9 @@ const Planeador = () => {
   };
 
   const buscar = async () => {
+    const res = await fetch(`http://localhost:3001/destinos?${modoBusqueda}=${input}`);
+    const data = await res.json();
     if (modoBusqueda === "ciudad") {
-      const res = await fetch(`http://localhost:3001/destinos?ciudad=${input}`);
-      const data = await res.json();
       if (data.length > 0) {
         setResultado(data[0]);
       } else {
@@ -30,8 +32,6 @@ const Planeador = () => {
         setResultado(null);
       }
     } else {
-      const res = await fetch(`http://localhost:3001/destinos?pais=${input}`);
-      const data = await res.json();
       if (data.length > 0) {
         const ciudades = data.map((d) => d.ciudad);
         setCiudadesDisponibles(ciudades);
@@ -52,28 +52,35 @@ const Planeador = () => {
   };
 
   const guardarBusqueda = async () => {
-    if (!resultado) return Swal.fire("Oops", "Primero haz una búsqueda", "info");
+  if (!resultado) return Swal.fire("Oops", "Primero haz una búsqueda", "info");
 
-    const res = await fetch("http://localhost:3001/busquedas");
-    const data = await res.json();
+  const res = await fetch("http://localhost:3001/busquedas");
+  const data = await res.json();
 
-    const yaExiste = data.some((item) => item.ciudad === resultado.ciudad);
-    if (yaExiste) return Swal.fire("Ya guardado", "Este destino ya está guardado", "info");
+  const busquedasUsuario = data.filter((item) => item.usuario === usuario.email);
 
-    await fetch("http://localhost:3001/busquedas", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ...resultado, id: undefined }),
-    });
+  const yaExiste = busquedasUsuario.some(
+    (item) => item.ciudad === resultado.ciudad && item.pais === resultado.pais
+  );
 
-    Swal.fire("Guardado", "Destino guardado correctamente", "success");
-    obtenerHistorial();
-  };
+  if (yaExiste) return Swal.fire("Ya guardado", "Este destino ya está guardado", "info");
+
+  await fetch("http://localhost:3001/busquedas", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ ...resultado, usuario: usuario.email, id: undefined }),
+  });
+
+  Swal.fire("Guardado", "Destino guardado correctamente", "success");
+  obtenerHistorial();
+};
+
 
   const obtenerHistorial = async () => {
     const res = await fetch("http://localhost:3001/busquedas");
     const data = await res.json();
-    setHistorial(data);
+    const soloDelUsuario = data.filter(item => item.usuario === usuario.email);
+    setHistorial(soloDelUsuario);
   };
 
   const eliminarCiudad = async (id) => {
@@ -82,10 +89,22 @@ const Planeador = () => {
         method: "DELETE",
       });
       Swal.fire("Eliminado", "Destino eliminado del historial", "success");
-      obtenerHistorial(); // Refresca la lista
+      obtenerHistorial();
     } catch (error) {
       Swal.fire("Error", "No se pudo eliminar el destino", "error");
     }
+  };
+
+  const handleLogout = () => {
+    Swal.fire({
+      icon: "success",
+      title: "Cerraste sesión correctamente",
+      showConfirmButton: false,
+      timer: 1500,
+    }).then(() => {
+      localStorage.removeItem("usuario");
+      window.location.href = "/login";
+    });
   };
 
   useEffect(() => {
@@ -94,113 +113,119 @@ const Planeador = () => {
 
   return (
     <div className="planeador">
-      <section className="nueva-busqueda">
-        <h2>Búsqueda nueva</h2>
-        <select value={modoBusqueda} onChange={cambiarModo}>
-          <option value="ciudad">Buscar por ciudad</option>
-          <option value="pais">Buscar por país</option>
-        </select>
+      <div className="encabezado">
+        <p className="bienvenida">¡Hola {usuario.nombre}, bienvenid@ a tu planeador de viajes!</p>
+        <button className="cerrar-sesion" onClick={handleLogout}>Cerrar sesión</button>
+      </div>
 
-        <input
-          type="text"
-          placeholder={modoBusqueda === "ciudad" ? "Ingresa una ciudad" : "Ingresa un país"}
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-        />
-        <button onClick={buscar}>Buscar</button>
+      <div className="contenedor-secciones">
+        {/* Búsqueda nueva */}
+        <section className="nueva-busqueda">
+          <h2>Búsqueda nueva</h2>
+          <select value={modoBusqueda} onChange={cambiarModo}>
+            <option value="ciudad">Buscar por ciudad</option>
+            <option value="pais">Buscar por país</option>
+          </select>
 
-        {modoBusqueda === "pais" && ciudadesDisponibles.length > 0 && (
-          <>
-            <select value={ciudadSeleccionada} onChange={(e) => setCiudadSeleccionada(e.target.value)}>
-              <option value="">Selecciona una ciudad</option>
-              {ciudadesDisponibles.map((ciudad, i) => (
-                <option key={i} value={ciudad}>
-                  {ciudad}
-                </option>
-              ))}
-            </select>
-            <button onClick={buscarCiudadDelPais}>Buscar ciudad</button>
-          </>
-        )}
+          <input
+            type="text"
+            placeholder={modoBusqueda === "ciudad" ? "Ingresa una ciudad" : "Ingresa un país"}
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+          />
+          <button onClick={buscar}>Buscar</button>
 
-        {resultado && (
-          <div className="resultado">
-            <h3>{resultado.ciudad}, {resultado.pais}</h3>
-            <p><strong>Descripción:</strong> {resultado.descripcion}</p>
-            <p><strong>Restaurantes Famosos:</strong> {resultado.comida}</p>
-            <p><strong>Playas famosas:</strong> {resultado.playas}</p>
-            <p><strong>Hoteles (USD):</strong></p>
-            <p><strong>Hoteles (USD):</strong></p>
-            <ul>
-              {resultado.hoteles.map((hotel, i) => (
-                <li key={i}>
-                  {hotel.nombre} – ${hotel.precio_noche_usd}
-                </li>
-              ))}
-            </ul>
-            <p><strong>Transporte público (USD):</strong> {resultado.transporte}</p>
-            <p><strong>Clima:</strong> {resultado.clima}</p>
-            <p><strong>Sitios turísticos:</strong></p>
-            <ul>
-              {resultado.sitios.map((sitio, i) => (
-                <li key={i}>
-                  {sitio.nombre} – Horarios: {sitio.horarios}
-                </li>
-              ))}
-            </ul>
-            <p><strong>Fechas idóneas:</strong> {resultado.fechas}</p>
-            <button onClick={guardarBusqueda}>Guardar búsqueda</button>
-          </div>
-        )}
-      </section>
+          {modoBusqueda === "pais" && ciudadesDisponibles.length > 0 && (
+            <>
+              <select value={ciudadSeleccionada} onChange={(e) => setCiudadSeleccionada(e.target.value)}>
+                <option value="">Selecciona una ciudad</option>
+                {ciudadesDisponibles.map((ciudad, i) => (
+                  <option key={i} value={ciudad}>
+                    {ciudad}
+                  </option>
+                ))}
+              </select>
+              <button onClick={buscarCiudadDelPais}>Buscar ciudad</button>
+            </>
+          )}
 
-      <section className="historial">
-        <h2>Historial de búsquedas</h2>
-        <ul>
-          {historial.map((item) => (
-            <li key={item.id} className="historial-item">
-              <div
-                onClick={() =>
-                  setCiudadExpandida(ciudadExpandida === item.id ? null : item.id)
-                }
-                style={{ cursor: "pointer", fontWeight: "bold" }}
-              >
-                {item.ciudad}, {item.pais}
-              </div>
+          {resultado && (
+            <div className="resultado">
+              <h3>{resultado.ciudad}, {resultado.pais}</h3>
+              <p><strong>Descripción:</strong> {resultado.descripcion}</p>
+              <p><strong>Restaurantes Famosos:</strong> {resultado.comida}</p>
+              <p><strong>Playas famosas:</strong> {resultado.playas}</p>
+              <p><strong>Hoteles (USD):</strong></p>
+              <ul>
+                {resultado.hoteles.map((hotel, i) => (
+                  <li key={i}>
+                    {hotel.nombre} – ${hotel.precio_noche_usd}
+                  </li>
+                ))}
+              </ul>
+              <p><strong>Transporte público (USD):</strong> {resultado.transporte}</p>
+              <p><strong>Clima:</strong> {resultado.clima}</p>
+              <p><strong>Sitios turísticos:</strong></p>
+              <ul>
+                {resultado.sitios.map((sitio, i) => (
+                  <li key={i}>
+                    {sitio.nombre} – Horarios: {sitio.horarios}
+                  </li>
+                ))}
+              </ul>
+              <p><strong>Fechas idóneas:</strong> {resultado.fechas}</p>
+              <button onClick={guardarBusqueda}>Guardar búsqueda</button>
+            </div>
+          )}
+        </section>
 
-              {ciudadExpandida === item.id && (
-                <div className="detalle-historial">
-                  <p><strong>Descripción:</strong> {item.descripcion}</p>
-                  <p><strong>Restaurantes Famosos:</strong> {item.comida}</p>
-                  <p><strong>Playas famosas:</strong> {item.playas}</p>
-                  <p><strong>Hoteles (USD):</strong></p>
-                  <p><strong>Hoteles (USD):</strong></p>
-                  <ul>
-                    {item.hoteles.map((hotel, i) => (
-                      <li key={i}>
-                        {hotel.nombre} – ${hotel.precio_noche_usd}
-                      </li>
-                    ))}
-                  </ul>
-                  <p><strong>Transporte público (USD):</strong> {item.transporte}</p>
-                  <p><strong>Clima:</strong> {item.clima}</p>
-                  <p><strong>Sitios turísticos:</strong></p>
-                  <p><strong>Sitios turísticos:</strong></p>
-                  <ul>
-                    {item.sitios.map((sitio, i) => (
-                      <li key={i}>
-                        {sitio.nombre} – Horarios: {sitio.horarios}
-                      </li>
-                    ))}
-                  </ul>
-                  <p><strong>Fechas idóneas:</strong> {item.fechas}</p>
-                  <button onClick={() => eliminarCiudad(item.id)}>Eliminar</button>
+        {/* Historial */}
+        <section className="historial">
+          <h2>Historial de búsquedas</h2>
+          <ul>
+            {historial.map((item) => (
+              <li key={item.id} className="historial-item">
+                <div
+                  onClick={() =>
+                    setCiudadExpandida(ciudadExpandida === item.id ? null : item.id)
+                  }
+                  style={{ cursor: "pointer", fontWeight: "bold" }}
+                >
+                  {item.ciudad}, {item.pais}
                 </div>
-              )}
-            </li>
-          ))}
-        </ul>
-      </section>
+
+                {ciudadExpandida === item.id && (
+                  <div className="detalle-historial">
+                    <p><strong>Descripción:</strong> {item.descripcion}</p>
+                    <p><strong>Restaurantes Famosos:</strong> {item.comida}</p>
+                    <p><strong>Playas famosas:</strong> {item.playas}</p>
+                    <p><strong>Hoteles (USD):</strong></p>
+                    <ul>
+                      {item.hoteles.map((hotel, i) => (
+                        <li key={i}>
+                          {hotel.nombre} – ${hotel.precio_noche_usd}
+                        </li>
+                      ))}
+                    </ul>
+                    <p><strong>Transporte público (USD):</strong> {item.transporte}</p>
+                    <p><strong>Clima:</strong> {item.clima}</p>
+                    <p><strong>Sitios turísticos:</strong></p>
+                    <ul>
+                      {item.sitios.map((sitio, i) => (
+                        <li key={i}>
+                          {sitio.nombre} – Horarios: {sitio.horarios}
+                        </li>
+                      ))}
+                    </ul>
+                    <p><strong>Fechas idóneas:</strong> {item.fechas}</p>
+                    <button onClick={() => eliminarCiudad(item.id)}>Eliminar</button>
+                  </div>
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
+      </div>
     </div>
   );
 };

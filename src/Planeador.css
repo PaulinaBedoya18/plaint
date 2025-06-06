@@ -1,22 +1,64 @@
-/* Planeador.css */
-
+/* Estilo general */
 .planeador {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  flex-direction: column;
+  gap: 30px;
   padding: 40px;
   background-color: #f4f9ff;
-  flex-wrap: wrap;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
+/* Encabezado */
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.encabezado p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #003366;
+}
+
+.encabezado button {
+  background-color: #003366;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.encabezado button:hover {
+  background-color: #003366;
+}
+
+/* Contenedor búsqueda + historial */
+.contenedor-secciones {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+/* Secciones */
 .nueva-busqueda,
 .historial {
   flex: 1;
-  min-width: 45%;
   background-color: #ffffff;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
 
 .nueva-busqueda h2,
@@ -26,6 +68,7 @@
   margin-bottom: 20px;
 }
 
+/* Inputs y select */
 .nueva-busqueda select,
 .nueva-busqueda input,
 .nueva-busqueda button {
@@ -36,6 +79,7 @@
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 6px;
+  box-sizing: border-box;
 }
 
 .nueva-busqueda button {
@@ -51,6 +95,7 @@
   background-color: #005bb5;
 }
 
+/* Resultado */
 .resultado {
   margin-top: 20px;
   padding: 20px;
@@ -69,9 +114,11 @@
   color: #333;
 }
 
+/* Historial */
 .historial ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .historial li {
@@ -81,7 +128,9 @@
   border-left: 4px solid #0073e6;
   border-radius: 6px;
   font-size: 16px;
+  cursor: pointer;
 }
+
 .detalle-historial {
   margin-top: 10px;
   background-color: #f0f8ff;
@@ -102,5 +151,23 @@
 }
 
 .detalle-historial button:hover {
-  background-color: #0073e6;
+  background-color: #005bb5;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .contenedor-secciones {
+    flex-direction: column;
+  }
+
+  .nueva-busqueda,
+  .historial {
+    min-width: 100%;
+  }
+
+  .encabezado {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 }

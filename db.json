@@ -7,11 +7,19 @@
       "email": "pau_18lb@hotmail.com",
       "fechaNacimiento": "2001-01-18",
       "password": "1192767507"
+    },
+    {
+      "id": "7944",
+      "nombre": "Jaime Alberto",
+      "apellido": "Zapata Valencia",
+      "email": "JAIME.C@GMAIL.COM",
+      "fechaNacimiento": "2025-06-02",
+      "password": "1234"
     }
   ],
   "destinos": [
     {
-      "id": 1,
+      "id": "1",
       "pais": "Francia",
       "ciudad": "París",
       "descripcion": "París, conocida como la Ciudad de la Luz, es famosa por su rica historia, arquitectura icónica y gastronomía de clase mundial.",
@@ -67,7 +75,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "pais": "España",
       "ciudad": "Madrid",
       "descripcion": "Capital de España, conocida por su vida nocturna y arte. Madrid es famosa por su rica historia y sus museos emblemáticos.",
@@ -123,7 +131,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "pais": "Italia",
       "ciudad": "Roma",
       "descripcion": "Roma, la capital de Italia, es famosa por sus monumentos históricos, la Ciudad del Vaticano y su cocina tradicional.",
@@ -180,7 +188,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "pais": "México",
       "ciudad": "Ciudad de México",
       "descripcion": "La Ciudad de México es la capital del país y un centro cultural y económico en América Latina, famosa por su historia y arquitectura.",
@@ -237,7 +245,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "pais": "Brasil",
       "ciudad": "Río de Janeiro",
       "descripcion": "Famosa por sus playas, el Carnaval y el Cristo Redentor, Río es un destino turístico vibrante en Brasil.",
@@ -294,7 +302,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": "6",
       "pais": "Estados Unidos",
       "ciudad": "Nueva York",
       "descripcion": "Ciudad vibrante conocida por su diversidad y cultura. Nueva York es famosa por su arquitectura, arte y vida nocturna.",
@@ -351,7 +359,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": "7",
       "pais": "Japón",
       "ciudad": "Tokio",
       "descripcion": "Ciudad futurista con una rica tradición cultural. Tokio es un destino que mezcla lo moderno con lo antiguo.",
@@ -408,7 +416,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": "8",
       "pais": "Reino Unido",
       "ciudad": "Londres",
       "descripcion": "Ciudad histórica con una mezcla de lo antiguo y lo moderno, famosa por su cultura, arquitectura y vida nocturna.",
@@ -464,7 +472,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": "9",
       "pais": "Argentina",
       "ciudad": "Buenos Aires",
       "descripcion": "Ciudad vibrante conocida por su tango y arquitectura europea. Buenos Aires es el corazón cultural de Argentina.",
@@ -520,7 +528,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": "10",
       "pais": "Australia",
       "ciudad": "Sídney",
       "descripcion": "Una de las ciudades más icónicas de Australia, conocida por su Ópera, sus playas y su vida cosmopolita.",
@@ -577,7 +585,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": "11",
       "pais": "China",
       "ciudad": "Pekín",
       "descripcion": "La capital de China es famosa por su historia imperial y monumentos como la Ciudad Prohibida y la Gran Muralla.",
@@ -633,7 +641,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": "7",
       "pais": "Japón",
       "ciudad": "Tokio",
       "descripcion": "Ciudad futurista con una rica tradición cultural. Tokio es un destino que mezcla lo moderno con lo antiguo.",
@@ -690,7 +698,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": "8",
       "pais": "Reino Unido",
       "ciudad": "Londres",
       "descripcion": "Ciudad histórica con una mezcla de lo antiguo y lo moderno, famosa por su cultura, arquitectura y vida nocturna.",
@@ -746,7 +754,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": "9",
       "pais": "Argentina",
       "ciudad": "Buenos Aires",
       "descripcion": "Ciudad vibrante conocida por su tango y arquitectura europea. Buenos Aires es el corazón cultural de Argentina.",
@@ -802,7 +810,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": "10",
       "pais": "Australia",
       "ciudad": "Sídney",
       "descripcion": "Una de las ciudades más icónicas de Australia, conocida por su Ópera, sus playas y su vida cosmopolita.",
@@ -859,7 +867,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": "11",
       "pais": "China",
       "ciudad": "Pekín",
       "descripcion": "La capital de China es famosa por su historia imperial y monumentos como la Ciudad Prohibida y la Gran Muralla.",
@@ -915,7 +923,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": "12",
       "pais": "Colombia",
       "ciudad": "Bogotá",
       "descripcion": "Bogotá, la capital de Colombia, es conocida por su rica historia, museos y hermosas vistas desde los cerros.",
@@ -971,7 +979,7 @@
       ]
     },
     {
-      "id": 13,
+      "id": "13",
       "pais": "Chile",
       "ciudad": "Santiago",
       "descripcion": "Santiago es la capital de Chile, rodeada por montañas y con una vibrante vida cultural, moderna y gastronómica.",
@@ -1027,7 +1035,7 @@
       ]
     },
     {
-      "id": 14,
+      "id": "14",
       "pais": "Perú",
       "ciudad": "Lima",
       "descripcion": "Lima, la capital de Perú, es conocida por su gastronomía, historia colonial y hermosas vistas del Pacífico.",
@@ -1084,7 +1092,7 @@
       ]
     },
     {
-      "id": 15,
+      "id": "15",
       "pais": "Canadá",
       "ciudad": "Toronto",
       "descripcion": "Toronto es la ciudad más grande de Canadá, conocida por su diversidad cultural, arquitectura moderna y la icónica CN Tower.",
@@ -1141,7 +1149,7 @@
       ]
     },
     {
-      "id": 16,
+      "id": "16",
       "pais": "China",
       "ciudad": "Shanghái",
       "descripcion": "Shanghái, una de las ciudades más grandes y cosmopolitas de China, famosa por su arquitectura moderna y su ambiente animado.",
@@ -1197,7 +1205,7 @@
       ]
     },
     {
-      "id": 17,
+      "id": "17",
       "pais": "Italia",
       "ciudad": "Milán",
       "descripcion": "Milán es la capital de la moda y el diseño, famosa por su arquitectura renacentista, museos y la última cena de Da Vinci.",
@@ -1253,7 +1261,7 @@
       ]
     },
     {
-      "id": 18,
+      "id": "18",
       "pais": "Egipto",
       "ciudad": "El Cairo",
       "descripcion": "El Cairo, la capital de Egipto, es famosa por sus monumentos antiguos como las Pirámides de Giza y la Esfinge.",
@@ -1309,7 +1317,7 @@
       ]
     },
     {
-      "id": 19,
+      "id": "19",
       "pais": "Sudáfrica",
       "ciudad": "Ciudad del Cabo",
       "descripcion": "Ciudad costera conocida por su historia, montañas, playas y viñedos cercanos.",
@@ -1366,7 +1374,7 @@
       ]
     },
     {
-      "id": 20,
+      "id": "20",
       "pais": "Tailandia",
       "ciudad": "Bangkok",
       "descripcion": "Bangkok es una ciudad vibrante conocida por sus templos, mercados flotantes y vida nocturna.",
@@ -1422,7 +1430,7 @@
       ]
     },
     {
-      "id": 21,
+      "id": "21",
       "pais": "Italia",
       "ciudad": "Florencia",
       "descripcion": "Florencia es conocida como la cuna del Renacimiento y es famosa por su arte, arquitectura y cultura.",
@@ -1478,7 +1486,7 @@
       ]
     },
     {
-      "id": 22,
+      "id": "22",
       "pais": "México",
       "ciudad": "Cancún",
       "descripcion": "Cancún es un destino turístico mundialmente conocido por sus playas de arena blanca y aguas cristalinas del Caribe.",
@@ -1535,7 +1543,7 @@
       ]
     },
     {
-      "id": 23,
+      "id": "23",
       "pais": "Australia",
       "ciudad": "Melbourne",
       "descripcion": "Melbourne es conocida por su vibrante escena artística, su arquitectura moderna y sus eventos culturales.",
@@ -1592,7 +1600,7 @@
       ]
     },
     {
-      "id": 24,
+      "id": "24",
       "pais": "Egipto",
       "ciudad": "Luxor",
       "descripcion": "Luxor es conocida como el museo al aire libre más grande del mundo, con templos y tumbas de la antigua civilización egipcia.",
@@ -1648,7 +1656,7 @@
       ]
     },
     {
-      "id": 25,
+      "id": "25",
       "pais": "Estados Unidos",
       "ciudad": "Los Ángeles",
       "descripcion": "Los Ángeles es conocida por su industria cinematográfica, su vibrante vida nocturna y sus famosos lugares turísticos.",
@@ -1705,7 +1713,7 @@
       ]
     },
     {
-      "id": 26,
+      "id": "26",
       "pais": "Turquía",
       "ciudad": "Estambul",
       "descripcion": "Estambul es una ciudad transcontinental que conecta Europa y Asia, famosa por sus monumentos históricos y su cultura única.",
@@ -1762,7 +1770,7 @@
       ]
     },
     {
-      "id": 27,
+      "id": "27",
       "pais": "Tailandia",
       "ciudad": "Chiang Mai",
       "descripcion": "Chiang Mai, ubicada en el norte de Tailandia, es conocida por su cultura, templos y montañas.",
@@ -1818,7 +1826,7 @@
       ]
     },
     {
-      "id": 28,
+      "id": "28",
       "pais": "Rusia",
       "ciudad": "San Petersburgo",
       "descripcion": "San Petersburgo es la capital cultural de Rusia, conocida por su arquitectura imperial y museos de arte.",
@@ -1874,7 +1882,7 @@
       ]
     },
     {
-      "id": 29,
+      "id": "29",
       "pais": "Suecia",
       "ciudad": "Estocolmo",
       "descripcion": "Estocolmo, la capital de Suecia, es famosa por su arquitectura moderna y los canales que la atraviesan.",
@@ -1931,7 +1939,7 @@
       ]
     },
     {
-      "id": 30,
+      "id": "30",
       "pais": "Noruega",
       "ciudad": "Oslo",
       "descripcion": "Oslo, la capital de Noruega, es conocida por su arquitectura moderna y sus paisajes naturales.",
@@ -1988,7 +1996,7 @@
       ]
     },
     {
-      "id": 31,
+      "id": "31",
       "pais": "Finlandia",
       "ciudad": "Helsinki",
       "descripcion": "Helsinki es conocida por sus diseños modernos, su arquitectura y su proximidad al mar Báltico.",
@@ -2045,7 +2053,7 @@
       ]
     },
     {
-      "id": 32,
+      "id": "32",
       "pais": "Suecia",
       "ciudad": "Gotemburgo",
       "descripcion": "Gotemburgo es conocida por sus canales, arquitectura medieval y excelente gastronomía, particularmente su marisco.",
@@ -2102,7 +2110,7 @@
       ]
     },
     {
-      "id": 33,
+      "id": "33",
       "pais": "Islandia",
       "ciudad": "Reikiavik",
       "descripcion": "Reikiavik es la capital de Islandia, famosa por su arquitectura única, paisajes naturales y aguas termales.",
@@ -2158,7 +2166,7 @@
       ]
     },
     {
-      "id": 34,
+      "id": "34",
       "pais": "Portugal",
       "ciudad": "Lisboa",
       "descripcion": "Lisboa es famosa por su arquitectura de azulejos, sus tranvías amarillos y su vibrante vida nocturna.",
@@ -2215,7 +2223,7 @@
       ]
     },
     {
-      "id": 35,
+      "id": "35",
       "pais": "Nueva Zelanda",
       "ciudad": "Auckland",
       "descripcion": "Auckland es la ciudad más grande de Nueva Zelanda, conocida por su puerto, cultura multicultural y paisajes naturales.",
@@ -2272,7 +2280,7 @@
       ]
     },
     {
-      "id": 36,
+      "id": "36",
       "pais": "Egipto",
       "ciudad": "Alejandría",
       "descripcion": "Alejandría es una ciudad histórica en la costa mediterránea, famosa por su antigua biblioteca y monumentos egipcios.",
@@ -2441,6 +2449,63 @@
         "Otoño (septiembre a noviembre): Menos turistas y buen clima.",
         "Verano (julio a agosto): Alta temporada, más caro, más turistas."
       ]
+    },
+    {
+      "id": "ecfb",
+      "pais": "Colombia",
+      "ciudad": "Bogotá",
+      "descripcion": "Bogotá, la capital de Colombia, es conocida por su rica historia, museos y hermosas vistas desde los cerros.",
+      "comida": [
+        "Andrés Carne de Res - ",
+        "La Plaza de Andrés -",
+        "El Cielo - ",
+        "Café San Alberto - ",
+        "La Brasserie. "
+      ],
+      "playas": [
+        "No tiene"
+      ],
+      "hoteles": [
+        {
+          "nombre": "Hotel de la Opera",
+          "precio_noche_usd": 150
+        },
+        {
+          "nombre": "JW Marriott Hotel Bogotá",
+          "precio_noche_usd": 250
+        },
+        {
+          "nombre": "Ibis Bogotá Museo",
+          "precio_noche_usd": 60
+        }
+      ],
+      "transporte": 0.8,
+      "clima": [
+        "Primavera: 10-20°C - ",
+        "Verano: 15-25°C - ",
+        "Otoño: 10-20°C - ",
+        "Invierno: 5-15°C."
+      ],
+      "sitios": [
+        {
+          "nombre": "Museo del Oro",
+          "horarios": "9:00 AM - 6:00 PM"
+        },
+        {
+          "nombre": "Cerro Monserrate",
+          "horarios": "9:00 AM - 9:00 PM"
+        },
+        {
+          "nombre": "Plaza Bolívar",
+          "horarios": "24 horas"
+        }
+      ],
+      "fechas": [
+        "Primavera (abril a junio): Clima moderado y buenas actividades al aire libre. - ",
+        "Verano (julio a agosto): Menos lluvia, más turistas. - ",
+        "Otoño (septiembre a noviembre): Buen clima y menos turistas."
+      ],
+      "usuario": "JAIME.C@GMAIL.COM"
     }
   ]
 }
